@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/alinaermoglio/geant4-v11.4.2/mysim/mysimT1/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

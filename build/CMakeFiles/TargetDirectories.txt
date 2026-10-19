@@ -1,0 +1,3 @@
+/Users/alinaermoglio/geant4-v11.4.2/mysim/mysimT1/build/CMakeFiles/mysim.dir
+/Users/alinaermoglio/geant4-v11.4.2/mysim/mysimT1/build/CMakeFiles/edit_cache.dir
+/Users/alinaermoglio/geant4-v11.4.2/mysim/mysimT1/build/CMakeFiles/rebuild_cache.dir
