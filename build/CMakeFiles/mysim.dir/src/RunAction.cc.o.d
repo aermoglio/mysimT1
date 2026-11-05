@@ -924,10 +924,93 @@ CMakeFiles/mysim.dir/src/RunAction.cc.o: \
   /usr/local/include/Geant4/G4AllocatorPool.hh \
   /usr/local/include/Geant4/G4PrimaryParticle.hh \
   /usr/local/include/Geant4/G4ParticleMomentum.hh \
+  /usr/local/include/Geant4/G4AnalysisManager.hh \
+  /usr/local/include/Geant4/G4GenericAnalysisManager.hh \
+  /usr/local/include/Geant4/G4ToolsAnalysisManager.hh \
+  /usr/local/include/Geant4/G4VAnalysisManager.hh \
+  /usr/local/include/Geant4/G4AnalysisManagerState.hh \
+  /usr/local/include/Geant4/G4AnalysisVerbose.hh \
+  /usr/local/include/Geant4/G4AnalysisUtilities.hh \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_status.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_type.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perms.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_time_type.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/operations.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/space_info.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h \
+  /usr/local/include/Geant4/G4VTBaseHnManager.hh \
+  /usr/local/include/Geant4/G4HnInformation.hh \
+  /usr/local/include/Geant4/G4BinScheme.hh \
+  /usr/local/include/Geant4/G4Fcn.hh \
+  /usr/local/include/Geant4/G4VAnalysisManager.icc \
+  /usr/local/include/Geant4/G4HnManager.hh \
+  /usr/local/include/Geant4/G4BaseAnalysisManager.hh \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/set \
+  /usr/local/include/Geant4/G4NtupleBookingManager.hh \
+  /usr/local/include/Geant4/tools/ntuple_booking \
+  /usr/local/include/Geant4/tools/cids \
+  /usr/local/include/Geant4/tools/cid \
+  /usr/local/include/Geant4/tools/typedefs \
+  /usr/local/include/Geant4/tools/forit \
+  /usr/local/include/Geant4/G4NtupleBookingManager.icc \
+  /usr/local/include/Geant4/G4VNtupleManager.hh \
+  /usr/local/include/Geant4/G4VFileManager.hh \
+  /usr/local/include/Geant4/G4BaseFileManager.hh \
+  /usr/local/include/Geant4/G4VTHnFileManager.hh \
+  /usr/local/include/Geant4/G4TH1ToolsManager.hh \
+  /usr/local/include/Geant4/G4THnToolsManager.hh \
+  /usr/local/include/Geant4/G4THnManager.hh \
+  /usr/local/include/Geant4/G4THnManager.icc \
+  /usr/local/include/Geant4/G4THnMessenger.hh \
+  /usr/local/include/Geant4/G4UImessenger.hh \
+  /usr/local/include/Geant4/G4UIdirectory.hh \
+  /usr/local/include/Geant4/G4UIcommand.hh \
+  /usr/local/include/Geant4/G4ApplicationState.hh \
+  /usr/local/include/Geant4/G4UIparameter.hh \
+  /usr/local/include/Geant4/G4THnToolsManager.icc \
+  /usr/local/include/Geant4/G4THnMessenger.icc \
+  /usr/local/include/Geant4/G4Tokenizer.hh \
+  /usr/local/include/Geant4/G4TH2ToolsManager.hh \
+  /usr/local/include/Geant4/G4TH3ToolsManager.hh \
+  /usr/local/include/Geant4/G4TP1ToolsManager.hh \
+  /usr/local/include/Geant4/G4TP2ToolsManager.hh \
+  /usr/local/include/Geant4/tools/histo/h1d \
+  /usr/local/include/Geant4/tools/histo/h1 \
+  /usr/local/include/Geant4/tools/histo/b1 \
+  /usr/local/include/Geant4/tools/histo/base_histo \
+  /usr/local/include/Geant4/tools/histo/histo_data \
+  /usr/local/include/Geant4/tools/histo/axes \
+  /usr/local/include/Geant4/tools/histo/axis \
+  /usr/local/include/Geant4/tools/histo/../eqT \
+  /usr/local/include/Geant4/tools/histo/h2d \
+  /usr/local/include/Geant4/tools/histo/h2 \
+  /usr/local/include/Geant4/tools/histo/b2 \
+  /usr/local/include/Geant4/tools/histo/h3d \
+  /usr/local/include/Geant4/tools/histo/h3 \
+  /usr/local/include/Geant4/tools/histo/b3 \
+  /usr/local/include/Geant4/tools/histo/p1d \
+  /usr/local/include/Geant4/tools/histo/p1 \
+  /usr/local/include/Geant4/tools/histo/profile_data \
+  /usr/local/include/Geant4/tools/histo/p2d \
+  /usr/local/include/Geant4/tools/histo/p2 \
+  /usr/local/include/Geant4/G4ToolsAnalysisManager.icc \
+  /usr/local/include/Geant4/G4GenericAnalysisManager.icc \
+  /usr/local/include/Geant4/G4GenericFileManager.hh \
+  /usr/local/include/Geant4/G4GenericFileManager.icc \
   /usr/local/include/Geant4/G4Run.hh \
   /usr/local/include/Geant4/G4RunManager.hh \
   /usr/local/include/Geant4/G4Event.hh \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/set \
   /usr/local/include/Geant4/evtdefs.hh \
   /usr/local/include/Geant4/G4HCofThisEvent.hh \
   /usr/local/include/Geant4/G4VHitsCollection.hh \
@@ -994,24 +1077,6 @@ CMakeFiles/mysim.dir/src/RunAction.cc.o: \
   /usr/local/include/Geant4/G4MaterialPropertyVector.hh \
   /usr/local/include/Geant4/G4PhysicsFreeVector.hh \
   /usr/local/include/Geant4/G4PhysicsVector.hh \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_status.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_type.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perms.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_time_type.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/operations.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/space_info.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /usr/local/include/Geant4/G4PhysicsVectorType.hh \
   /usr/local/include/Geant4/G4PhysicsVector.icc \
   /usr/local/include/Geant4/G4MaterialTable.hh \
@@ -1127,11 +1192,6 @@ CMakeFiles/mysim.dir/src/RunAction.cc.o: \
   /usr/local/include/Geant4/G4VSteppingVerbose.hh \
   /usr/local/include/Geant4/trkgdefs.hh \
   /usr/local/include/Geant4/G4TrackingMessenger.hh \
-  /usr/local/include/Geant4/G4UImessenger.hh \
-  /usr/local/include/Geant4/G4UIdirectory.hh \
-  /usr/local/include/Geant4/G4UIcommand.hh \
-  /usr/local/include/Geant4/G4ApplicationState.hh \
-  /usr/local/include/Geant4/G4UIparameter.hh \
   /usr/local/include/Geant4/G4UserTrackingAction.hh \
   /usr/local/include/Geant4/G4RunManagerKernel.hh \
   /usr/local/include/Geant4/rundefs.hh \

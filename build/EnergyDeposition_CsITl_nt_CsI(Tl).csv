@@ -1,0 +1,15 @@
+#class tools::wcsv::ntuple
+#title Energy Deposition Data
+#separator 44
+#vector_separator 59
+#column double Edep
+0
+0.0876501
+0
+0.116389
+0.029458
+0
+0.0455418
+0
+0.338772
+0

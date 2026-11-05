@@ -27,6 +27,8 @@
 /// \brief Implementation of the B1::EventAction class
 
 #include "EventAction.hh"
+#include "G4AnalysisManager.hh"
+
 
 #include "RunAction.hh"
 
@@ -50,6 +52,12 @@ void EventAction::EndOfEventAction(const G4Event*)
 {
   // accumulate statistics in run action
   fRunAction->AddEdep(fEdep);
+
+  auto analysisManager = G4AnalysisManager::Instance();
+  analysisManager->FillNtupleDColumn(0, fEdep);
+  analysisManager->AddNtupleRow();
+
+  //What this does: Each event ends with one new row in the CSV containing the total energy deposited in the scoring volume during that event.
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

@@ -36,6 +36,7 @@
 #include "G4LogicalVolume.hh"
 #include "G4ParticleDefinition.hh"
 #include "G4ParticleGun.hh"
+#include "G4AnalysisManager.hh"
 #include "G4Run.hh"
 #include "G4RunManager.hh"
 #include "G4SystemOfUnits.hh"
@@ -70,6 +71,16 @@ RunAction::RunAction()
 
 void RunAction::BeginOfRunAction(const G4Run*)
 {
+// analysis manager to get a csv file with the energy deposition data
+  auto analysisManager = G4AnalysisManager::Instance();
+  analysisManager->SetDefaultFileType("csv");
+  analysisManager->OpenFile("EnergyDeposition_CsITl");
+
+  analysisManager->CreateNtuple("CsI(Tl)", "Energy Deposition Data");
+  analysisManager->CreateNtupleDColumn("Edep");  // column 0
+  analysisManager->FinishNtuple();
+
+
   // inform the runManager to save random number seed
   G4RunManager::GetRunManager()->SetRandomNumberStore(false);
 
@@ -136,6 +147,10 @@ void RunAction::EndOfRunAction(const G4Run* run)
   G4cout << " Absorbed dose per run in scoring volume = edep/mass = " << G4BestUnit(dose, "Dose")
          << "; rms = " << G4BestUnit(rmsDose, "Dose") << G4endl
          << "------------------------------------------------------------" << G4endl << G4endl;
+
+  auto analysisManager = G4AnalysisManager::Instance();
+  analysisManager->Write();
+  analysisManager->CloseFile();
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
