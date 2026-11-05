@@ -33,6 +33,8 @@
 
 #include "G4Event.hh"
 #include "G4LogicalVolume.hh"
+#include "G4OpticalPhoton.hh"
+#include "G4SystemOfUnits.hh"
 #include "G4RunManager.hh"
 #include "G4Step.hh"
 
@@ -64,7 +66,9 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
   // collect energy deposited in this step
   G4double edepStep = step->GetTotalEnergyDeposit();
   fEventAction->AddEdep(edepStep);
+
 }
+
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 

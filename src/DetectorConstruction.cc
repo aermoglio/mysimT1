@@ -169,7 +169,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
                                          shape1_mat,  // its material
                                          "Shape1");  // its name
     
-  fScoringVolume = logicShape1;
+  //fScoringVolume = logicShape1;
 
   new G4PVPlacement(nullptr,  // no rotation
                     pos1,  // at position
@@ -181,17 +181,17 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
                     checkOverlaps);  // overlaps checking
 
   //
-/*
+
   // Shape 2. PV
   //
-  G4Material* shape2_mat = nist->FindOrBuildMaterial("G4_BONE_COMPACT_ICRU");
-  G4ThreeVector pos2 = G4ThreeVector(0, -1 * cm, 7 * cm);
+  G4Material* shape2_mat = nist->FindOrBuildMaterial("G4_Si");
+  G4ThreeVector pos2 = G4ThreeVector(0, 2 * cm, -7 * cm);
 
   // PV
   
     G4double shape2_dx=12. * cm;
     G4double shape2_dy=10. * cm;
-    G4double shape2_dz=6. *cm;
+    G4double shape2_dz=0.5 *cm;
     auto solidShape2 =new G4Box("Shape2",shape2_dx,shape2_dy,shape2_dz); // making the shape
   
 
@@ -215,7 +215,6 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   //
   // always return the physical World
  
-*/
  
   //
   return physWorld;

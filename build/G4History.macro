@@ -68,7 +68,17 @@
 /run/beamOn 1
 /vis/scene/notifyHandlers scene-0
 /run/beamOn 1
-/vis/set/touchable World 0 Envelope 0
-/vis/touchable/set/visibility false
-/vis/viewer/refresh
-/vis/scene/notifyHandlers
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1

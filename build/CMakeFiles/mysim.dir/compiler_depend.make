@@ -7116,6 +7116,7 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
   /usr/local/include/Geant4/G4NoProcess.hh \
   /usr/local/include/Geant4/G4NormalNavigation.hh \
   /usr/local/include/Geant4/G4NormalNavigation.icc \
+  /usr/local/include/Geant4/G4OpticalPhoton.hh \
   /usr/local/include/Geant4/G4OrderedTable.hh \
   /usr/local/include/Geant4/G4PDefManager.hh \
   /usr/local/include/Geant4/G4ParameterisedNavigation.hh \
@@ -7173,6 +7174,7 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
   /usr/local/include/Geant4/G4String.icc \
   /usr/local/include/Geant4/G4SubEvent.hh \
   /usr/local/include/Geant4/G4SubEventTrackStack.hh \
+  /usr/local/include/Geant4/G4SystemOfUnits.hh \
   /usr/local/include/Geant4/G4Threading.hh \
   /usr/local/include/Geant4/G4ThreeVector.hh \
   /usr/local/include/Geant4/G4TouchableHandle.hh \
@@ -7230,6 +7232,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
   /usr/local/include/Geant4/trkdefs.hh \
   /usr/local/include/Geant4/trkgdefs.hh
 
+
+/usr/local/include/Geant4/G4OpticalPhoton.hh:
 
 /Users/alinaermoglio/geant4-v11.4.2/mysim/mysimT1/src/SteppingAction.cc:
 

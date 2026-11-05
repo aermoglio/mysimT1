@@ -910,6 +910,11 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: \
   /usr/local/include/Geant4/CLHEP/Vector/Rotation.icc \
   /usr/local/include/Geant4/G4VPhysicalVolume.icc \
   /usr/local/include/Geant4/G4LogicalVolume.icc \
+  /usr/local/include/Geant4/G4OpticalPhoton.hh \
+  /usr/local/include/Geant4/G4ParticleDefinition.hh \
+  /usr/local/include/Geant4/G4PDefManager.hh \
+  /usr/local/include/Geant4/G4ParticleDefinition.icc \
+  /usr/local/include/Geant4/G4SystemOfUnits.hh \
   /usr/local/include/Geant4/G4RunManager.hh \
   /usr/local/include/Geant4/G4EventManager.hh \
   /usr/local/include/Geant4/G4StackManager.hh \
@@ -927,9 +932,6 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: \
   /usr/local/include/Geant4/G4Log.hh \
   /usr/local/include/Geant4/G4IEEE754.hh \
   /usr/local/include/Geant4/G4LorentzVector.hh \
-  /usr/local/include/Geant4/G4ParticleDefinition.hh \
-  /usr/local/include/Geant4/G4PDefManager.hh \
-  /usr/local/include/Geant4/G4ParticleDefinition.icc \
   /usr/local/include/Geant4/G4ParticleMomentum.hh \
   /usr/local/include/Geant4/G4DynamicParticle.icc \
   /usr/local/include/Geant4/G4TrackStatus.hh \

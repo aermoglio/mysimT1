@@ -32,6 +32,7 @@
 #include "PrimaryGeneratorAction.hh"
 
 #include "G4AccumulableManager.hh"
+#include "G4OpticalPhoton.hh"
 #include "G4LogicalVolume.hh"
 #include "G4ParticleDefinition.hh"
 #include "G4ParticleGun.hh"
