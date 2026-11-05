@@ -5991,6 +5991,7 @@ CMakeFiles/mysim.dir/src/RunAction.cc.o: /Users/alinaermoglio/geant4-v11.4.2/mys
   /usr/local/include/Geant4/G4NoProcess.hh \
   /usr/local/include/Geant4/G4NormalNavigation.hh \
   /usr/local/include/Geant4/G4NormalNavigation.icc \
+  /usr/local/include/Geant4/G4OpticalPhoton.hh \
   /usr/local/include/Geant4/G4OrderedTable.hh \
   /usr/local/include/Geant4/G4PDefManager.hh \
   /usr/local/include/Geant4/G4ParameterisedNavigation.hh \
@@ -7233,11 +7234,11 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
   /usr/local/include/Geant4/trkgdefs.hh
 
 
-/usr/local/include/Geant4/G4OpticalPhoton.hh:
-
 /Users/alinaermoglio/geant4-v11.4.2/mysim/mysimT1/src/SteppingAction.cc:
 
 /usr/local/include/Geant4/G4UnitsTable.icc:
+
+/usr/local/include/Geant4/G4OpticalPhoton.hh:
 
 /usr/local/include/Geant4/G4AccumulableManager.hh:
 

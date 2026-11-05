@@ -185,6 +185,24 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   // Shape 2. PV
   //
   G4Material* shape2_mat = nist->FindOrBuildMaterial("G4_Si");
+
+  //adding optical properties to silicon
+  G4MaterialPropertiesTable* SiMPT= new G4MaterialPropertiesTable();
+  
+  //will use same wavelengths as those emitted by CsI, but looking up absorption lengths for each.
+  G4double Si_PhE[nEntries]={1.907*eV,1.99*eV,2.254*eV,2.431*eV,2.61*eV,3.1*eV};
+  
+  G4double Rind_Si[nEntries]={3.84,3.88,4.0764,4.239,4.45,5.50};
+  G4double AbsL_Si[nEntries]={3.39*um,2.71*um,1.39*um,0.9*um,0.59*um,0.11*um};
+
+  SiMPT->AddProperty("RINDEX",Si_PhE,Rind_Si,nEntries);
+  SiMPT->AddProperty("ABSLENGTH",Si_PhE, AbsL_Si,nEntries);
+
+
+  shape2_mat->SetMaterialPropertiesTable(SiMPT);
+
+
+
   G4ThreeVector pos2 = G4ThreeVector(0, 2 * cm, -7 * cm);
 
   // PV
