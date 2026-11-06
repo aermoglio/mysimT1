@@ -76,8 +76,14 @@ void RunAction::BeginOfRunAction(const G4Run*)
   analysisManager->SetDefaultFileType("csv");
   analysisManager->OpenFile("EnergyDeposition_CsITl");
 
-  analysisManager->CreateNtuple("CsI(Tl)", "Energy Deposition Data");
+  analysisManager->CreateNtuple("CsI(Tl)", "Energy Deposition Data");   //tuple 0
   analysisManager->CreateNtupleDColumn("Edep");  // column 0
+  analysisManager->FinishNtuple();
+
+  analysisManager->CreateNtuple("CsI(Tl)", "Photon absorption");   //tuple 1
+  analysisManager->CreateNtupleIColumn("Event");  // column 0
+  analysisManager->CreateNtupleIColumn("Track num");  // column 1
+  analysisManager->CreateNtupleDColumn("edep");  // column 2
   analysisManager->FinishNtuple();
 
 

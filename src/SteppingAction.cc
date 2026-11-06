@@ -33,6 +33,7 @@
 
 #include "G4Event.hh"
 #include "G4LogicalVolume.hh"
+#include "G4AnalysisManager.hh"
 #include "G4OpticalPhoton.hh"
 #include "G4SystemOfUnits.hh"
 #include "G4RunManager.hh"
@@ -67,7 +68,25 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
   G4double edepStep = step->GetTotalEnergyDeposit();
   fEventAction->AddEdep(edepStep);
 
-  //checking if optical photon has been absorbed. 
+  //trying to get energies of photons being absorbed by the silicon
+  
+  G4Track* track= step->GetTrack();
+  const G4ParticleDefinition* particle = track->GetDefinition();
+
+  if (particle->GetParticleName() == "opticalphoton") {
+    G4String processName = step->GetPostStepPoint()->GetProcessDefinedStep()->GetProcessName();
+    if (processName == "OpAbsorption") {
+      G4double photonEnergy=track->GetKineticEnergy();
+
+      G4int eventID = G4EventManager::GetEventManager()->GetConstCurrentEvent()->GetEventID();
+
+      auto analysisManager = G4AnalysisManager::Instance();
+      analysisManager->FillNtupleIColumn(1,0, eventID);
+      analysisManager->FillNtupleIColumn(1,1, track->GetTrackID());
+      analysisManager->FillNtupleDColumn(1,2, photonEnergy);
+      analysisManager->AddNtupleRow(1);
+    }
+  }
 
 }
 

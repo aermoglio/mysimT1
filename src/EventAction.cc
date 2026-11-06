@@ -54,8 +54,8 @@ void EventAction::EndOfEventAction(const G4Event*)
   fRunAction->AddEdep(fEdep);
 
   auto analysisManager = G4AnalysisManager::Instance();
-  analysisManager->FillNtupleDColumn(0, fEdep);
-  analysisManager->AddNtupleRow();
+  analysisManager->FillNtupleDColumn(0,0, fEdep);
+  analysisManager->AddNtupleRow(0);
 
   //What this does: Each event ends with one new row in the CSV containing the total energy deposited in the scoring volume during that event.
 }

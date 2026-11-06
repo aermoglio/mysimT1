@@ -3306,6 +3306,7 @@ CMakeFiles/mysim.dir/src/EventAction.cc.o: /Users/alinaermoglio/geant4-v11.4.2/m
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/traits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/convert_to_timespec.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/duration.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/file_clock.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/high_resolution_clock.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/steady_clock.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/system_clock.h \
@@ -3361,6 +3362,22 @@ CMakeFiles/mysim.dir/src/EventAction.cc.o: /Users/alinaermoglio/geant4-v11.4.2/m
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/nested_exception.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/operations.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/terminate.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_status.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_time_type.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_type.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/operations.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perms.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/space_info.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/enable_insertable.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/fmt_pair_like.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/range_format.h \
@@ -3557,6 +3574,12 @@ CMakeFiles/mysim.dir/src/EventAction.cc.o: /Users/alinaermoglio/geant4-v11.4.2/m
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/view_interface.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__split_buffer \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__std_mbstate_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/atomic_unique_lock.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/intrusive_list_view.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/intrusive_shared_ptr.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/stop_callback.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/stop_state.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/stop_token.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__string/char_traits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__string/constexpr_c_functions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__string/extern_template_lists.h \
@@ -3570,6 +3593,8 @@ CMakeFiles/mysim.dir/src/EventAction.cc.o: /Users/alinaermoglio/geant4-v11.4.2/m
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/poll_with_backoff.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/support.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/support/pthread.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/this_thread.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/thread.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/timed_backoff_policy.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/find_index.h \
@@ -3739,12 +3764,14 @@ CMakeFiles/mysim.dir/src/EventAction.cc.o: /Users/alinaermoglio/geant4-v11.4.2/m
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cctype \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/climits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/clocale \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cmath \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/compare \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/complex \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/concepts \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/condition_variable \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdarg \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cstddef \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdint \
@@ -3758,8 +3785,12 @@ CMakeFiles/mysim.dir/src/EventAction.cc.o: /Users/alinaermoglio/geant4-v11.4.2/m
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/deque \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/errno.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/exception \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/format \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/functional \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/future \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ios \
@@ -3779,6 +3810,7 @@ CMakeFiles/mysim.dir/src/EventAction.cc.o: /Users/alinaermoglio/geant4-v11.4.2/m
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/queue \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/set \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stack \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h \
@@ -3791,6 +3823,7 @@ CMakeFiles/mysim.dir/src/EventAction.cc.o: /Users/alinaermoglio/geant4-v11.4.2/m
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/string.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/string_view \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/system_error \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/thread \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/tuple \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/typeinfo \
@@ -3954,26 +3987,97 @@ CMakeFiles/mysim.dir/src/EventAction.cc.o: /Users/alinaermoglio/geant4-v11.4.2/m
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/stdint.h \
   /Users/alinaermoglio/geant4-v11.4.2/mysim/mysimT1/include/EventAction.hh \
   /Users/alinaermoglio/geant4-v11.4.2/mysim/mysimT1/include/RunAction.hh \
+  /usr/local/include/Geant4/CLHEP/Utility/defs.h \
+  /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.h \
+  /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.icc \
   /usr/local/include/Geant4/G4AccType.hh \
   /usr/local/include/Geant4/G4AccValue.hh \
   /usr/local/include/Geant4/G4AccValue.icc \
   /usr/local/include/Geant4/G4Accumulable.hh \
+  /usr/local/include/Geant4/G4AnalysisManager.hh \
+  /usr/local/include/Geant4/G4AnalysisManagerState.hh \
+  /usr/local/include/Geant4/G4AnalysisUtilities.hh \
+  /usr/local/include/Geant4/G4AnalysisVerbose.hh \
+  /usr/local/include/Geant4/G4ApplicationState.hh \
+  /usr/local/include/Geant4/G4AutoLock.hh \
+  /usr/local/include/Geant4/G4BaseAnalysisManager.hh \
+  /usr/local/include/Geant4/G4BaseFileManager.hh \
+  /usr/local/include/Geant4/G4BinScheme.hh \
   /usr/local/include/Geant4/G4EnvironmentUtils.hh \
   /usr/local/include/Geant4/G4Exception.hh \
   /usr/local/include/Geant4/G4ExceptionSeverity.hh \
+  /usr/local/include/Geant4/G4Fcn.hh \
+  /usr/local/include/Geant4/G4GenericAnalysisManager.hh \
+  /usr/local/include/Geant4/G4GenericAnalysisManager.icc \
+  /usr/local/include/Geant4/G4GenericFileManager.hh \
+  /usr/local/include/Geant4/G4GenericFileManager.icc \
   /usr/local/include/Geant4/G4GlobalConfig.hh \
+  /usr/local/include/Geant4/G4HnInformation.hh \
+  /usr/local/include/Geant4/G4HnManager.hh \
   /usr/local/include/Geant4/G4MergeMode.hh \
+  /usr/local/include/Geant4/G4NtupleBookingManager.hh \
+  /usr/local/include/Geant4/G4NtupleBookingManager.icc \
   /usr/local/include/Geant4/G4String.hh \
   /usr/local/include/Geant4/G4String.icc \
+  /usr/local/include/Geant4/G4TH1ToolsManager.hh \
+  /usr/local/include/Geant4/G4TH2ToolsManager.hh \
+  /usr/local/include/Geant4/G4TH3ToolsManager.hh \
+  /usr/local/include/Geant4/G4THnManager.hh \
+  /usr/local/include/Geant4/G4THnManager.icc \
+  /usr/local/include/Geant4/G4THnMessenger.hh \
+  /usr/local/include/Geant4/G4THnMessenger.icc \
+  /usr/local/include/Geant4/G4THnToolsManager.hh \
+  /usr/local/include/Geant4/G4THnToolsManager.icc \
+  /usr/local/include/Geant4/G4TP1ToolsManager.hh \
+  /usr/local/include/Geant4/G4TP2ToolsManager.hh \
+  /usr/local/include/Geant4/G4Threading.hh \
+  /usr/local/include/Geant4/G4ThreeVector.hh \
+  /usr/local/include/Geant4/G4Tokenizer.hh \
+  /usr/local/include/Geant4/G4ToolsAnalysisManager.hh \
+  /usr/local/include/Geant4/G4ToolsAnalysisManager.icc \
   /usr/local/include/Geant4/G4Types.hh \
+  /usr/local/include/Geant4/G4UIcommand.hh \
+  /usr/local/include/Geant4/G4UIdirectory.hh \
+  /usr/local/include/Geant4/G4UImessenger.hh \
+  /usr/local/include/Geant4/G4UIparameter.hh \
   /usr/local/include/Geant4/G4UserEventAction.hh \
   /usr/local/include/Geant4/G4UserRunAction.hh \
   /usr/local/include/Geant4/G4VAccumulable.hh \
   /usr/local/include/Geant4/G4VAccumulable.icc \
+  /usr/local/include/Geant4/G4VAnalysisManager.hh \
+  /usr/local/include/Geant4/G4VAnalysisManager.icc \
+  /usr/local/include/Geant4/G4VFileManager.hh \
+  /usr/local/include/Geant4/G4VNtupleManager.hh \
+  /usr/local/include/Geant4/G4VTBaseHnManager.hh \
+  /usr/local/include/Geant4/G4VTHnFileManager.hh \
   /usr/local/include/Geant4/G4ios.hh \
   /usr/local/include/Geant4/globals.hh \
   /usr/local/include/Geant4/templates.hh \
-  /usr/local/include/Geant4/tls.hh
+  /usr/local/include/Geant4/tls.hh \
+  /usr/local/include/Geant4/tools/cid \
+  /usr/local/include/Geant4/tools/cids \
+  /usr/local/include/Geant4/tools/forit \
+  /usr/local/include/Geant4/tools/eqT \
+  /usr/local/include/Geant4/tools/histo/axes \
+  /usr/local/include/Geant4/tools/histo/axis \
+  /usr/local/include/Geant4/tools/histo/b1 \
+  /usr/local/include/Geant4/tools/histo/b2 \
+  /usr/local/include/Geant4/tools/histo/b3 \
+  /usr/local/include/Geant4/tools/histo/base_histo \
+  /usr/local/include/Geant4/tools/histo/h1 \
+  /usr/local/include/Geant4/tools/histo/h1d \
+  /usr/local/include/Geant4/tools/histo/h2 \
+  /usr/local/include/Geant4/tools/histo/h2d \
+  /usr/local/include/Geant4/tools/histo/h3 \
+  /usr/local/include/Geant4/tools/histo/h3d \
+  /usr/local/include/Geant4/tools/histo/histo_data \
+  /usr/local/include/Geant4/tools/histo/p1 \
+  /usr/local/include/Geant4/tools/histo/p1d \
+  /usr/local/include/Geant4/tools/histo/p2 \
+  /usr/local/include/Geant4/tools/histo/p2d \
+  /usr/local/include/Geant4/tools/histo/profile_data \
+  /usr/local/include/Geant4/tools/ntuple_booking \
+  /usr/local/include/Geant4/tools/typedefs
 
 CMakeFiles/mysim.dir/src/PrimaryGeneratorAction.cc.o: /Users/alinaermoglio/geant4-v11.4.2/mysim/mysimT1/src/PrimaryGeneratorAction.cc \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/SDKSettings.json \
@@ -5936,10 +6040,17 @@ CMakeFiles/mysim.dir/src/RunAction.cc.o: /Users/alinaermoglio/geant4-v11.4.2/mys
   /usr/local/include/Geant4/G4AffineTransform.icc \
   /usr/local/include/Geant4/G4Allocator.hh \
   /usr/local/include/Geant4/G4AllocatorPool.hh \
+  /usr/local/include/Geant4/G4AnalysisManager.hh \
+  /usr/local/include/Geant4/G4AnalysisManagerState.hh \
+  /usr/local/include/Geant4/G4AnalysisUtilities.hh \
+  /usr/local/include/Geant4/G4AnalysisVerbose.hh \
   /usr/local/include/Geant4/G4ApplicationState.hh \
   /usr/local/include/Geant4/G4AutoLock.hh \
   /usr/local/include/Geant4/G4AuxiliaryNavServices.hh \
   /usr/local/include/Geant4/G4AuxiliaryNavServices.icc \
+  /usr/local/include/Geant4/G4BaseAnalysisManager.hh \
+  /usr/local/include/Geant4/G4BaseFileManager.hh \
+  /usr/local/include/Geant4/G4BinScheme.hh \
   /usr/local/include/Geant4/G4BlockingList.hh \
   /usr/local/include/Geant4/G4BlockingList.icc \
   /usr/local/include/Geant4/G4ClassificationOfNewTrack.hh \
@@ -5958,11 +6069,18 @@ CMakeFiles/mysim.dir/src/RunAction.cc.o: /Users/alinaermoglio/geant4-v11.4.2/mys
   /usr/local/include/Geant4/G4EventManager.hh \
   /usr/local/include/Geant4/G4Exception.hh \
   /usr/local/include/Geant4/G4ExceptionSeverity.hh \
+  /usr/local/include/Geant4/G4Fcn.hh \
   /usr/local/include/Geant4/G4ForceCondition.hh \
   /usr/local/include/Geant4/G4GPILSelection.hh \
+  /usr/local/include/Geant4/G4GenericAnalysisManager.hh \
+  /usr/local/include/Geant4/G4GenericAnalysisManager.icc \
+  /usr/local/include/Geant4/G4GenericFileManager.hh \
+  /usr/local/include/Geant4/G4GenericFileManager.icc \
   /usr/local/include/Geant4/G4GeomSplitter.hh \
   /usr/local/include/Geant4/G4GlobalConfig.hh \
   /usr/local/include/Geant4/G4HCofThisEvent.hh \
+  /usr/local/include/Geant4/G4HnInformation.hh \
+  /usr/local/include/Geant4/G4HnManager.hh \
   /usr/local/include/Geant4/G4IEEE754.hh \
   /usr/local/include/Geant4/G4IonisParamElm.hh \
   /usr/local/include/Geant4/G4IonisParamMat.hh \
@@ -5991,6 +6109,8 @@ CMakeFiles/mysim.dir/src/RunAction.cc.o: /Users/alinaermoglio/geant4-v11.4.2/mys
   /usr/local/include/Geant4/G4NoProcess.hh \
   /usr/local/include/Geant4/G4NormalNavigation.hh \
   /usr/local/include/Geant4/G4NormalNavigation.icc \
+  /usr/local/include/Geant4/G4NtupleBookingManager.hh \
+  /usr/local/include/Geant4/G4NtupleBookingManager.icc \
   /usr/local/include/Geant4/G4OpticalPhoton.hh \
   /usr/local/include/Geant4/G4OrderedTable.hh \
   /usr/local/include/Geant4/G4PDefManager.hh \
@@ -6052,8 +6172,22 @@ CMakeFiles/mysim.dir/src/RunAction.cc.o: /Users/alinaermoglio/geant4-v11.4.2/mys
   /usr/local/include/Geant4/G4SubEvent.hh \
   /usr/local/include/Geant4/G4SubEventTrackStack.hh \
   /usr/local/include/Geant4/G4SystemOfUnits.hh \
+  /usr/local/include/Geant4/G4TH1ToolsManager.hh \
+  /usr/local/include/Geant4/G4TH2ToolsManager.hh \
+  /usr/local/include/Geant4/G4TH3ToolsManager.hh \
+  /usr/local/include/Geant4/G4THnManager.hh \
+  /usr/local/include/Geant4/G4THnManager.icc \
+  /usr/local/include/Geant4/G4THnMessenger.hh \
+  /usr/local/include/Geant4/G4THnMessenger.icc \
+  /usr/local/include/Geant4/G4THnToolsManager.hh \
+  /usr/local/include/Geant4/G4THnToolsManager.icc \
+  /usr/local/include/Geant4/G4TP1ToolsManager.hh \
+  /usr/local/include/Geant4/G4TP2ToolsManager.hh \
   /usr/local/include/Geant4/G4Threading.hh \
   /usr/local/include/Geant4/G4ThreeVector.hh \
+  /usr/local/include/Geant4/G4Tokenizer.hh \
+  /usr/local/include/Geant4/G4ToolsAnalysisManager.hh \
+  /usr/local/include/Geant4/G4ToolsAnalysisManager.icc \
   /usr/local/include/Geant4/G4TouchableHandle.hh \
   /usr/local/include/Geant4/G4TouchableHistory.hh \
   /usr/local/include/Geant4/G4TouchableHistory.icc \
@@ -6079,10 +6213,14 @@ CMakeFiles/mysim.dir/src/RunAction.cc.o: /Users/alinaermoglio/geant4-v11.4.2/mys
   /usr/local/include/Geant4/G4UserTrackingAction.hh \
   /usr/local/include/Geant4/G4VAccumulable.hh \
   /usr/local/include/Geant4/G4VAccumulable.icc \
+  /usr/local/include/Geant4/G4VAnalysisManager.hh \
+  /usr/local/include/Geant4/G4VAnalysisManager.icc \
   /usr/local/include/Geant4/G4VDigiCollection.hh \
   /usr/local/include/Geant4/G4VExternalNavigation.hh \
+  /usr/local/include/Geant4/G4VFileManager.hh \
   /usr/local/include/Geant4/G4VHitsCollection.hh \
   /usr/local/include/Geant4/G4VNavigation.hh \
+  /usr/local/include/Geant4/G4VNtupleManager.hh \
   /usr/local/include/Geant4/G4VPVParameterisation.hh \
   /usr/local/include/Geant4/G4VParticleChange.hh \
   /usr/local/include/Geant4/G4VParticleChange.icc \
@@ -6093,6 +6231,8 @@ CMakeFiles/mysim.dir/src/RunAction.cc.o: /Users/alinaermoglio/geant4-v11.4.2/mys
   /usr/local/include/Geant4/G4VSolid.hh \
   /usr/local/include/Geant4/G4VSolid.icc \
   /usr/local/include/Geant4/G4VSteppingVerbose.hh \
+  /usr/local/include/Geant4/G4VTBaseHnManager.hh \
+  /usr/local/include/Geant4/G4VTHnFileManager.hh \
   /usr/local/include/Geant4/G4VTouchable.hh \
   /usr/local/include/Geant4/G4VTrajectory.hh \
   /usr/local/include/Geant4/G4VUserDetectorConstruction.hh \
@@ -6112,6 +6252,30 @@ CMakeFiles/mysim.dir/src/RunAction.cc.o: /Users/alinaermoglio/geant4-v11.4.2/mys
   /usr/local/include/Geant4/rundefs.hh \
   /usr/local/include/Geant4/templates.hh \
   /usr/local/include/Geant4/tls.hh \
+  /usr/local/include/Geant4/tools/cid \
+  /usr/local/include/Geant4/tools/cids \
+  /usr/local/include/Geant4/tools/forit \
+  /usr/local/include/Geant4/tools/eqT \
+  /usr/local/include/Geant4/tools/histo/axes \
+  /usr/local/include/Geant4/tools/histo/axis \
+  /usr/local/include/Geant4/tools/histo/b1 \
+  /usr/local/include/Geant4/tools/histo/b2 \
+  /usr/local/include/Geant4/tools/histo/b3 \
+  /usr/local/include/Geant4/tools/histo/base_histo \
+  /usr/local/include/Geant4/tools/histo/h1 \
+  /usr/local/include/Geant4/tools/histo/h1d \
+  /usr/local/include/Geant4/tools/histo/h2 \
+  /usr/local/include/Geant4/tools/histo/h2d \
+  /usr/local/include/Geant4/tools/histo/h3 \
+  /usr/local/include/Geant4/tools/histo/h3d \
+  /usr/local/include/Geant4/tools/histo/histo_data \
+  /usr/local/include/Geant4/tools/histo/p1 \
+  /usr/local/include/Geant4/tools/histo/p1d \
+  /usr/local/include/Geant4/tools/histo/p2 \
+  /usr/local/include/Geant4/tools/histo/p2d \
+  /usr/local/include/Geant4/tools/histo/profile_data \
+  /usr/local/include/Geant4/tools/ntuple_booking \
+  /usr/local/include/Geant4/tools/typedefs \
   /usr/local/include/Geant4/trkdefs.hh \
   /usr/local/include/Geant4/trkgdefs.hh
 
@@ -7063,10 +7227,17 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
   /usr/local/include/Geant4/G4AffineTransform.icc \
   /usr/local/include/Geant4/G4Allocator.hh \
   /usr/local/include/Geant4/G4AllocatorPool.hh \
+  /usr/local/include/Geant4/G4AnalysisManager.hh \
+  /usr/local/include/Geant4/G4AnalysisManagerState.hh \
+  /usr/local/include/Geant4/G4AnalysisUtilities.hh \
+  /usr/local/include/Geant4/G4AnalysisVerbose.hh \
   /usr/local/include/Geant4/G4ApplicationState.hh \
   /usr/local/include/Geant4/G4AutoLock.hh \
   /usr/local/include/Geant4/G4AuxiliaryNavServices.hh \
   /usr/local/include/Geant4/G4AuxiliaryNavServices.icc \
+  /usr/local/include/Geant4/G4BaseAnalysisManager.hh \
+  /usr/local/include/Geant4/G4BaseFileManager.hh \
+  /usr/local/include/Geant4/G4BinScheme.hh \
   /usr/local/include/Geant4/G4BlockingList.hh \
   /usr/local/include/Geant4/G4BlockingList.icc \
   /usr/local/include/Geant4/G4ClassificationOfNewTrack.hh \
@@ -7085,11 +7256,18 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
   /usr/local/include/Geant4/G4EventManager.hh \
   /usr/local/include/Geant4/G4Exception.hh \
   /usr/local/include/Geant4/G4ExceptionSeverity.hh \
+  /usr/local/include/Geant4/G4Fcn.hh \
   /usr/local/include/Geant4/G4ForceCondition.hh \
   /usr/local/include/Geant4/G4GPILSelection.hh \
+  /usr/local/include/Geant4/G4GenericAnalysisManager.hh \
+  /usr/local/include/Geant4/G4GenericAnalysisManager.icc \
+  /usr/local/include/Geant4/G4GenericFileManager.hh \
+  /usr/local/include/Geant4/G4GenericFileManager.icc \
   /usr/local/include/Geant4/G4GeomSplitter.hh \
   /usr/local/include/Geant4/G4GlobalConfig.hh \
   /usr/local/include/Geant4/G4HCofThisEvent.hh \
+  /usr/local/include/Geant4/G4HnInformation.hh \
+  /usr/local/include/Geant4/G4HnManager.hh \
   /usr/local/include/Geant4/G4IEEE754.hh \
   /usr/local/include/Geant4/G4IonisParamElm.hh \
   /usr/local/include/Geant4/G4IonisParamMat.hh \
@@ -7117,6 +7295,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
   /usr/local/include/Geant4/G4NoProcess.hh \
   /usr/local/include/Geant4/G4NormalNavigation.hh \
   /usr/local/include/Geant4/G4NormalNavigation.icc \
+  /usr/local/include/Geant4/G4NtupleBookingManager.hh \
+  /usr/local/include/Geant4/G4NtupleBookingManager.icc \
   /usr/local/include/Geant4/G4OpticalPhoton.hh \
   /usr/local/include/Geant4/G4OrderedTable.hh \
   /usr/local/include/Geant4/G4PDefManager.hh \
@@ -7176,8 +7356,22 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
   /usr/local/include/Geant4/G4SubEvent.hh \
   /usr/local/include/Geant4/G4SubEventTrackStack.hh \
   /usr/local/include/Geant4/G4SystemOfUnits.hh \
+  /usr/local/include/Geant4/G4TH1ToolsManager.hh \
+  /usr/local/include/Geant4/G4TH2ToolsManager.hh \
+  /usr/local/include/Geant4/G4TH3ToolsManager.hh \
+  /usr/local/include/Geant4/G4THnManager.hh \
+  /usr/local/include/Geant4/G4THnManager.icc \
+  /usr/local/include/Geant4/G4THnMessenger.hh \
+  /usr/local/include/Geant4/G4THnMessenger.icc \
+  /usr/local/include/Geant4/G4THnToolsManager.hh \
+  /usr/local/include/Geant4/G4THnToolsManager.icc \
+  /usr/local/include/Geant4/G4TP1ToolsManager.hh \
+  /usr/local/include/Geant4/G4TP2ToolsManager.hh \
   /usr/local/include/Geant4/G4Threading.hh \
   /usr/local/include/Geant4/G4ThreeVector.hh \
+  /usr/local/include/Geant4/G4Tokenizer.hh \
+  /usr/local/include/Geant4/G4ToolsAnalysisManager.hh \
+  /usr/local/include/Geant4/G4ToolsAnalysisManager.icc \
   /usr/local/include/Geant4/G4TouchableHandle.hh \
   /usr/local/include/Geant4/G4TouchableHistory.hh \
   /usr/local/include/Geant4/G4TouchableHistory.icc \
@@ -7199,10 +7393,14 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
   /usr/local/include/Geant4/G4UserStackingAction.hh \
   /usr/local/include/Geant4/G4UserSteppingAction.hh \
   /usr/local/include/Geant4/G4UserTrackingAction.hh \
+  /usr/local/include/Geant4/G4VAnalysisManager.hh \
+  /usr/local/include/Geant4/G4VAnalysisManager.icc \
   /usr/local/include/Geant4/G4VDigiCollection.hh \
   /usr/local/include/Geant4/G4VExternalNavigation.hh \
+  /usr/local/include/Geant4/G4VFileManager.hh \
   /usr/local/include/Geant4/G4VHitsCollection.hh \
   /usr/local/include/Geant4/G4VNavigation.hh \
+  /usr/local/include/Geant4/G4VNtupleManager.hh \
   /usr/local/include/Geant4/G4VPVParameterisation.hh \
   /usr/local/include/Geant4/G4VParticleChange.hh \
   /usr/local/include/Geant4/G4VParticleChange.icc \
@@ -7212,6 +7410,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
   /usr/local/include/Geant4/G4VSolid.hh \
   /usr/local/include/Geant4/G4VSolid.icc \
   /usr/local/include/Geant4/G4VSteppingVerbose.hh \
+  /usr/local/include/Geant4/G4VTBaseHnManager.hh \
+  /usr/local/include/Geant4/G4VTHnFileManager.hh \
   /usr/local/include/Geant4/G4VTouchable.hh \
   /usr/local/include/Geant4/G4VTrajectory.hh \
   /usr/local/include/Geant4/G4VUserDetectorConstruction.hh \
@@ -7230,6 +7430,30 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
   /usr/local/include/Geant4/rundefs.hh \
   /usr/local/include/Geant4/templates.hh \
   /usr/local/include/Geant4/tls.hh \
+  /usr/local/include/Geant4/tools/cid \
+  /usr/local/include/Geant4/tools/cids \
+  /usr/local/include/Geant4/tools/forit \
+  /usr/local/include/Geant4/tools/eqT \
+  /usr/local/include/Geant4/tools/histo/axes \
+  /usr/local/include/Geant4/tools/histo/axis \
+  /usr/local/include/Geant4/tools/histo/b1 \
+  /usr/local/include/Geant4/tools/histo/b2 \
+  /usr/local/include/Geant4/tools/histo/b3 \
+  /usr/local/include/Geant4/tools/histo/base_histo \
+  /usr/local/include/Geant4/tools/histo/h1 \
+  /usr/local/include/Geant4/tools/histo/h1d \
+  /usr/local/include/Geant4/tools/histo/h2 \
+  /usr/local/include/Geant4/tools/histo/h2d \
+  /usr/local/include/Geant4/tools/histo/h3 \
+  /usr/local/include/Geant4/tools/histo/h3d \
+  /usr/local/include/Geant4/tools/histo/histo_data \
+  /usr/local/include/Geant4/tools/histo/p1 \
+  /usr/local/include/Geant4/tools/histo/p1d \
+  /usr/local/include/Geant4/tools/histo/p2 \
+  /usr/local/include/Geant4/tools/histo/p2d \
+  /usr/local/include/Geant4/tools/histo/profile_data \
+  /usr/local/include/Geant4/tools/ntuple_booking \
+  /usr/local/include/Geant4/tools/typedefs \
   /usr/local/include/Geant4/trkdefs.hh \
   /usr/local/include/Geant4/trkgdefs.hh
 
@@ -7255,6 +7479,62 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 /usr/local/include/Geant4/G4VPrimaryGenerator.hh:
 
 /usr/local/include/Geant4/G4LogicalVolumeStore.hh:
+
+/usr/local/include/Geant4/tools/histo/profile_data:
+
+/usr/local/include/Geant4/tools/histo/p1:
+
+/usr/local/include/Geant4/tools/histo/h2d:
+
+/usr/local/include/Geant4/tools/histo/h2:
+
+/usr/local/include/Geant4/tools/histo/h1d:
+
+/usr/local/include/Geant4/tools/histo/base_histo:
+
+/usr/local/include/Geant4/tools/histo/b1:
+
+/usr/local/include/Geant4/tools/histo/axis:
+
+/usr/local/include/Geant4/tools/histo/axes:
+
+/usr/local/include/Geant4/tools/eqT:
+
+/usr/local/include/Geant4/G4VTBaseHnManager.hh:
+
+/usr/local/include/Geant4/G4VAnalysisManager.icc:
+
+/usr/local/include/Geant4/G4TP1ToolsManager.hh:
+
+/usr/local/include/Geant4/G4THnToolsManager.hh:
+
+/usr/local/include/Geant4/G4THnMessenger.icc:
+
+/usr/local/include/Geant4/G4THnManager.icc:
+
+/usr/local/include/Geant4/G4NtupleBookingManager.icc:
+
+/usr/local/include/Geant4/G4NtupleBookingManager.hh:
+
+/usr/local/include/Geant4/G4HnManager.hh:
+
+/usr/local/include/Geant4/G4HnInformation.hh:
+
+/usr/local/include/Geant4/G4GenericFileManager.icc:
+
+/usr/local/include/Geant4/G4GenericFileManager.hh:
+
+/usr/local/include/Geant4/G4GenericAnalysisManager.icc:
+
+/usr/local/include/Geant4/tools/forit:
+
+/usr/local/include/Geant4/G4GenericAnalysisManager.hh:
+
+/usr/local/include/Geant4/G4Fcn.hh:
+
+/usr/local/include/Geant4/G4BinScheme.hh:
+
+/usr/local/include/Geant4/G4AnalysisUtilities.hh:
 
 /usr/local/include/Geant4/G4SystemOfUnits.hh:
 
@@ -7370,6 +7650,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 
 /usr/local/include/Geant4/G4UIExecutive.hh:
 
+/usr/local/include/Geant4/G4THnMessenger.hh:
+
 /usr/local/include/Geant4/G4Tubs.icc:
 
 /usr/local/include/Geant4/G4Tubs.hh:
@@ -7430,6 +7712,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 
 /usr/local/include/Geant4/G4SteppingControl.hh:
 
+/usr/local/include/Geant4/tools/histo/p1d:
+
 /usr/local/include/Geant4/G4VStateDependent.hh:
 
 /usr/local/include/Geant4/G4StepStatus.hh:
@@ -7451,6 +7735,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 /usr/local/include/Geant4/G4RunManagerKernel.hh:
 
 /usr/local/include/Geant4/G4RunManagerFactory.hh:
+
+/usr/local/include/Geant4/G4AnalysisManager.hh:
 
 /usr/local/include/Geant4/G4RegularNavigation.hh:
 
@@ -7504,6 +7790,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 
 /usr/local/include/Geant4/G4PhysicsFreeVector.hh:
 
+/usr/local/include/Geant4/tools/histo/b2:
+
 /usr/local/include/Geant4/G4ParticleTableIterator.hh:
 
 /usr/local/include/Geant4/G4ParticleTable.icc:
@@ -7543,6 +7831,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 /usr/local/include/Geant4/G4NavigationHistory.hh:
 
 /usr/local/include/Geant4/G4ModelingParameters.hh:
+
+/usr/local/include/Geant4/tools/histo/p2d:
 
 /usr/local/include/Geant4/G4MaterialPropertiesTable.hh:
 
@@ -7608,6 +7898,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 
 /usr/local/include/Geant4/G4Colour.hh:
 
+/usr/local/include/Geant4/G4ToolsAnalysisManager.hh:
+
 /usr/local/include/Geant4/G4AutoLock.hh:
 
 /usr/local/include/Geant4/G4ApplicationState.hh:
@@ -7619,6 +7911,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 /usr/local/include/Geant4/G4AffineTransform.hh:
 
 /usr/local/include/Geant4/CLHEP/Vector/TwoVector.icc:
+
+/usr/local/include/Geant4/tools/cids:
 
 /usr/local/include/Geant4/CLHEP/Vector/TwoVector.h:
 
@@ -7688,6 +7982,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 
 /usr/local/include/Geant4/CLHEP/Random/RandGauss.icc:
 
+/usr/local/include/Geant4/tools/histo/h3d:
+
 /usr/local/include/Geant4/CLHEP/Random/RandGauss.h:
 
 /usr/local/include/Geant4/CLHEP/Random/RandGamma.h:
@@ -7737,6 +8033,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 /usr/local/include/Geant4/G4Trap.icc:
 
 /Users/alinaermoglio/geant4-v11.4.2/mysim/mysimT1/include/DetectorConstruction.hh:
+
+/usr/local/include/Geant4/G4TH3ToolsManager.hh:
 
 /usr/local/include/Geant4/PTL/Threading.hh:
 
@@ -8062,6 +8360,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/exception:
 
+/usr/local/include/Geant4/G4BaseFileManager.hh:
+
 /usr/local/include/Geant4/G4OpenGLQt.hh:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/errno.h:
@@ -8232,6 +8532,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_32_64_or_128_bit.h:
 
+/usr/local/include/Geant4/G4Tokenizer.hh:
+
 /usr/local/include/Geant4/PTL/TaskManager.hh:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/lazy.h:
@@ -8259,6 +8561,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_trivially_copyable.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_trivially_assignable.h:
+
+/usr/local/include/Geant4/tools/histo/histo_data:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_in_addr_t.h:
 
@@ -8370,6 +8674,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/variant:
 
+/usr/local/include/Geant4/tools/typedefs:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_arithmetic.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_always_bitcastable.h:
@@ -8407,6 +8713,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 /usr/local/include/Geant4/G4Visible.hh:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/has_virtual_destructor.h:
+
+/usr/local/include/Geant4/G4ToolsAnalysisManager.icc:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h:
 
@@ -8563,6 +8871,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/put_character_sequence.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:
+
+/usr/local/include/Geant4/G4AnalysisVerbose.hh:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__node_handle:
 
@@ -8722,6 +9032,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/money.h:
 
+/usr/local/include/Geant4/G4TH2ToolsManager.hh:
+
 /usr/local/include/Geant4/G4AuxiliaryNavServices.hh:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/get_c_locale.h:
@@ -8741,6 +9053,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max_element.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/ostreambuf_iterator.h:
+
+/usr/local/include/Geant4/tools/histo/h1:
 
 /usr/local/include/Geant4/CLHEP/Vector/LorentzVector.h:
 
@@ -8790,6 +9104,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_entry.h:
 
+/usr/local/include/Geant4/G4BaseAnalysisManager.hh:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_sentinel.h:
 
 /usr/local/include/Geant4/G4Step.icc:
@@ -8797,6 +9113,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 /usr/local/include/Geant4/G4Log.hh:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/default_sentinel.h:
+
+/usr/local/include/Geant4/G4VAnalysisManager.hh:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/mem_fn.h:
 
@@ -8807,6 +9125,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/machine/_endian.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/typeinfo:
+
+/usr/local/include/Geant4/tools/histo/h3:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem:
 
@@ -8881,6 +9201,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unsigned.h:
+
+/usr/local/include/Geant4/G4THnToolsManager.icc:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h:
 
@@ -9084,6 +9406,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/invoke.h:
 
+/usr/local/include/Geant4/G4AnalysisManagerState.hh:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/forward.h:
@@ -9149,6 +9473,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/nullptr_t.h:
+
+/usr/local/include/Geant4/tools/cid:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_posix_availability.h:
 
@@ -9298,6 +9624,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h:
 
+/usr/local/include/Geant4/tools/ntuple_booking:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/upper_bound.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/copy_backward.h:
@@ -9395,6 +9723,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_abstract.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/arm/_limits.h:
+
+/usr/local/include/Geant4/G4THnManager.hh:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/__stddef_nullptr_t.h:
 
@@ -9662,9 +9992,13 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_types.h:
 
+/usr/local/include/Geant4/tools/histo/b3:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/malloc/_malloc.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/prev.h:
+
+/usr/local/include/Geant4/G4TP2ToolsManager.hh:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_mb_cur_max.h:
 
@@ -9727,6 +10061,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_types/_intmax_t.h:
+
+/usr/local/include/Geant4/G4VTHnFileManager.hh:
 
 /usr/local/include/Geant4/pwdefs.hh:
 
@@ -9792,7 +10128,11 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h:
 
+/usr/local/include/Geant4/G4VNtupleManager.hh:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/unwrap_ref.h:
+
+/usr/local/include/Geant4/G4TH1ToolsManager.hh:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/invocable.h:
 
@@ -9828,6 +10168,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/tables.h:
 
+/usr/local/include/Geant4/tools/histo/p2:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/static_bounded_iter.h:
 
 /usr/local/include/Geant4/CLHEP/Random/RandChiSquare.icc:
@@ -9839,6 +10181,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 /usr/local/include/Geant4/G4DataVector.icc:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_core_convertible.h:
+
+/usr/local/include/Geant4/G4VFileManager.hh:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/__xlocale.h:
 
