@@ -28,6 +28,7 @@
 
 #include "EventAction.hh"
 #include "G4AnalysisManager.hh"
+#include "G4Event.hh"
 
 
 #include "RunAction.hh"
@@ -44,18 +45,30 @@ EventAction::EventAction(RunAction* runAction) : fRunAction(runAction) {}
 void EventAction::BeginOfEventAction(const G4Event*)
 {
   fEdep = 0.;
+  fScintillationPhotons = 0.;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-void EventAction::EndOfEventAction(const G4Event*)
+void EventAction::EndOfEventAction(const G4Event* event)
 {
   // accumulate statistics in run action
   fRunAction->AddEdep(fEdep);
+  fRunAction->AddScintillationPhoton(fScintillationPhotons);
 
+  G4int eventID = event->GetEventID();
+
+//appending data to tuples
+//overallenergy deposition
   auto analysisManager = G4AnalysisManager::Instance();
-  analysisManager->FillNtupleDColumn(0,0, fEdep);
+  analysisManager->FillNtupleIColumn(0,0, eventID);
+  analysisManager->FillNtupleDColumn(0,1, fEdep);
   analysisManager->AddNtupleRow(0);
+
+  //recording number of scintillation photons
+  analysisManager->FillNtupleIColumn(2,0, eventID);
+  analysisManager->FillNtupleIColumn(2,1, fScintillationPhotons);
+  analysisManager->AddNtupleRow(2);
 
   //What this does: Each event ends with one new row in the CSV containing the total energy deposited in the scoring volume during that event.
 }

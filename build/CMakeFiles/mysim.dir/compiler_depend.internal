@@ -3998,6 +3998,8 @@ CMakeFiles/mysim.dir/src/EventAction.cc.o
  /usr/local/include/Geant4/G4AccValue.hh
  /usr/local/include/Geant4/G4AccValue.icc
  /usr/local/include/Geant4/G4Accumulable.hh
+ /usr/local/include/Geant4/G4Allocator.hh
+ /usr/local/include/Geant4/G4AllocatorPool.hh
  /usr/local/include/Geant4/G4AnalysisManager.hh
  /usr/local/include/Geant4/G4AnalysisManagerState.hh
  /usr/local/include/Geant4/G4AnalysisUtilities.hh
@@ -4007,7 +4009,9 @@ CMakeFiles/mysim.dir/src/EventAction.cc.o
  /usr/local/include/Geant4/G4BaseAnalysisManager.hh
  /usr/local/include/Geant4/G4BaseFileManager.hh
  /usr/local/include/Geant4/G4BinScheme.hh
+ /usr/local/include/Geant4/G4DCofThisEvent.hh
  /usr/local/include/Geant4/G4EnvironmentUtils.hh
+ /usr/local/include/Geant4/G4Event.hh
  /usr/local/include/Geant4/G4Exception.hh
  /usr/local/include/Geant4/G4ExceptionSeverity.hh
  /usr/local/include/Geant4/G4Fcn.hh
@@ -4016,11 +4020,14 @@ CMakeFiles/mysim.dir/src/EventAction.cc.o
  /usr/local/include/Geant4/G4GenericFileManager.hh
  /usr/local/include/Geant4/G4GenericFileManager.icc
  /usr/local/include/Geant4/G4GlobalConfig.hh
+ /usr/local/include/Geant4/G4HCofThisEvent.hh
  /usr/local/include/Geant4/G4HnInformation.hh
  /usr/local/include/Geant4/G4HnManager.hh
  /usr/local/include/Geant4/G4MergeMode.hh
  /usr/local/include/Geant4/G4NtupleBookingManager.hh
  /usr/local/include/Geant4/G4NtupleBookingManager.icc
+ /usr/local/include/Geant4/G4PrimaryParticle.hh
+ /usr/local/include/Geant4/G4PrimaryVertex.hh
  /usr/local/include/Geant4/G4String.hh
  /usr/local/include/Geant4/G4String.icc
  /usr/local/include/Geant4/G4TH1ToolsManager.hh
@@ -4039,6 +4046,7 @@ CMakeFiles/mysim.dir/src/EventAction.cc.o
  /usr/local/include/Geant4/G4Tokenizer.hh
  /usr/local/include/Geant4/G4ToolsAnalysisManager.hh
  /usr/local/include/Geant4/G4ToolsAnalysisManager.icc
+ /usr/local/include/Geant4/G4TrajectoryContainer.hh
  /usr/local/include/Geant4/G4Types.hh
  /usr/local/include/Geant4/G4UIcommand.hh
  /usr/local/include/Geant4/G4UIdirectory.hh
@@ -4050,12 +4058,18 @@ CMakeFiles/mysim.dir/src/EventAction.cc.o
  /usr/local/include/Geant4/G4VAccumulable.icc
  /usr/local/include/Geant4/G4VAnalysisManager.hh
  /usr/local/include/Geant4/G4VAnalysisManager.icc
+ /usr/local/include/Geant4/G4VDigiCollection.hh
  /usr/local/include/Geant4/G4VFileManager.hh
+ /usr/local/include/Geant4/G4VHitsCollection.hh
  /usr/local/include/Geant4/G4VNtupleManager.hh
  /usr/local/include/Geant4/G4VTBaseHnManager.hh
  /usr/local/include/Geant4/G4VTHnFileManager.hh
+ /usr/local/include/Geant4/G4VTrajectory.hh
+ /usr/local/include/Geant4/G4VUserEventInformation.hh
  /usr/local/include/Geant4/G4ios.hh
+ /usr/local/include/Geant4/evtdefs.hh
  /usr/local/include/Geant4/globals.hh
+ /usr/local/include/Geant4/pwdefs.hh
  /usr/local/include/Geant4/templates.hh
  /usr/local/include/Geant4/tls.hh
  /usr/local/include/Geant4/tools/cid

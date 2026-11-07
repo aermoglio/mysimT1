@@ -949,6 +949,20 @@ CMakeFiles/mysim.dir/src/EventAction.cc.o: \
   /usr/local/include/Geant4/G4GenericAnalysisManager.icc \
   /usr/local/include/Geant4/G4GenericFileManager.hh \
   /usr/local/include/Geant4/G4GenericFileManager.icc \
+  /usr/local/include/Geant4/G4Event.hh \
+  /usr/local/include/Geant4/evtdefs.hh \
+  /usr/local/include/Geant4/G4Allocator.hh \
+  /usr/local/include/Geant4/G4AllocatorPool.hh \
+  /usr/local/include/Geant4/G4PrimaryVertex.hh \
+  /usr/local/include/Geant4/G4PrimaryParticle.hh \
+  /usr/local/include/Geant4/pwdefs.hh \
+  /usr/local/include/Geant4/G4HCofThisEvent.hh \
+  /usr/local/include/Geant4/G4VHitsCollection.hh \
+  /usr/local/include/Geant4/G4DCofThisEvent.hh \
+  /usr/local/include/Geant4/G4VDigiCollection.hh \
+  /usr/local/include/Geant4/G4TrajectoryContainer.hh \
+  /usr/local/include/Geant4/G4VTrajectory.hh \
+  /usr/local/include/Geant4/G4VUserEventInformation.hh \
   /Users/alinaermoglio/geant4-v11.4.2/mysim/mysimT1/include/RunAction.hh \
   /usr/local/include/Geant4/G4UserRunAction.hh \
   /usr/local/include/Geant4/G4Accumulable.hh \

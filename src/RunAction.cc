@@ -77,7 +77,8 @@ void RunAction::BeginOfRunAction(const G4Run*)
   analysisManager->OpenFile("EnergyDeposition_CsITl");
 
   analysisManager->CreateNtuple("CsI(Tl)", "Energy Deposition Data");   //tuple 0
-  analysisManager->CreateNtupleDColumn("Edep");  // column 0
+  analysisManager->CreateNtupleIColumn("Event"); //column0
+  analysisManager->CreateNtupleDColumn("Edep");  // column 1
   analysisManager->FinishNtuple();
 
   analysisManager->CreateNtuple("CsI(Tl)", "Photon absorption");   //tuple 1
@@ -86,6 +87,10 @@ void RunAction::BeginOfRunAction(const G4Run*)
   analysisManager->CreateNtupleDColumn("edep");  // column 2
   analysisManager->FinishNtuple();
 
+  analysisManager->CreateNtuple("CsI(Tl)", "N Scintillation Photons");   //tuple 2
+  analysisManager->CreateNtupleIColumn("Event");  // column 0
+  analysisManager->CreateNtupleIColumn("Scintillation Photons");  // column 1
+  analysisManager->FinishNtuple();
 
   // inform the runManager to save random number seed
   G4RunManager::GetRunManager()->SetRandomNumberStore(false);
@@ -167,6 +172,10 @@ void RunAction::AddEdep(G4double edep)
   fEdep2 += edep * edep;
 }
 
+void RunAction::AddScintillationPhoton(G4double photons)
+{
+  fScintillationPhotons += photons;
+}
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 }  // namespace B1

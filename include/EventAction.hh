@@ -51,10 +51,12 @@ class EventAction : public G4UserEventAction
     void EndOfEventAction(const G4Event* event) override;
 
     void AddEdep(G4double edep) { fEdep += edep; }
+    void AddScintillationPhoton() { fScintillationPhotons += 1; }   //function to count the number of scintillation photons produced in each event
 
   private:
     RunAction* fRunAction = nullptr;
     G4double fEdep = 0.;
+    G4double fScintillationPhotons = 0.;
 };
 
 }  // namespace B1

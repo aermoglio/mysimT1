@@ -50,7 +50,18 @@ SteppingAction::SteppingAction(EventAction* eventAction) : fEventAction(eventAct
 
 void SteppingAction::UserSteppingAction(const G4Step* step)
 {
-    
+
+  const auto secondaries = step->GetSecondaryInCurrentStep();
+  
+  for (const auto sec : *secondaries){
+    if (sec->GetDefinition() ->GetParticleName() == "opticalphoton"){
+      auto creatorProcess=sec->GetCreatorProcess()->GetProcessName();
+      if (creatorProcess == "Scintillation"){
+        fEventAction->AddScintillationPhoton();
+    }
+  }
+}
+
   if (!fScoringVolume) {
     const auto detConstruction = static_cast<const DetectorConstruction*>(
       G4RunManager::GetRunManager()->GetUserDetectorConstruction());
