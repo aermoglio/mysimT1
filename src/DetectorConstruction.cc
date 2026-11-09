@@ -192,8 +192,8 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   //will use same wavelengths as those emitted by CsI, but looking up absorption lengths for each.
   G4double Si_PhE[nEntries]={1.907*eV,1.99*eV,2.254*eV,2.431*eV,2.61*eV,3.1*eV};
   
-  G4double Rind_Si[nEntries]={3.84,3.88,4.0764,4.239,4.45,5.50};
-  G4double AbsL_Si[nEntries]={3.39*um,2.71*um,1.39*um,0.9*um,0.59*um,0.11*um};
+  G4double Rind_Si[nEntries]={4.523,4.6171,4.8521,4.9897,5.1028,5.1852};
+  G4double AbsL_Si[nEntries]={0.276*um,0.19*um,0.0783*um,0.0502*um,0.0344*um,0.0150*um};
 
   SiMPT->AddProperty("RINDEX",Si_PhE,Rind_Si,nEntries);
   SiMPT->AddProperty("ABSLENGTH",Si_PhE, AbsL_Si,nEntries);
