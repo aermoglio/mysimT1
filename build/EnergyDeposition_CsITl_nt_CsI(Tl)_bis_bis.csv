@@ -1,0 +1,7 @@
+#class tools::wcsv::ntuple
+#title N Scintillation Photons
+#separator 44
+#vector_separator 59
+#column int Event
+#column int Scintillation Photons
+0,13548
