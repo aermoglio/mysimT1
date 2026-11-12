@@ -3102,6 +3102,8 @@ CMakeFiles/mysim.dir/src/DetectorConstruction.cc.o: /Users/alinaermoglio/geant4-
   /usr/local/include/Geant4/G4Transform3D.hh \
   /usr/local/include/Geant4/G4Trd.hh \
   /usr/local/include/Geant4/G4Trd.icc \
+  /usr/local/include/Geant4/G4Tubs.hh \
+  /usr/local/include/Geant4/G4Tubs.icc \
   /usr/local/include/Geant4/G4TwoVector.hh \
   /usr/local/include/Geant4/G4Types.hh \
   /usr/local/include/Geant4/G4VPhysicalVolume.hh \

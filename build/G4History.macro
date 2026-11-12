@@ -65,7 +65,109 @@
 /vis/viewer/set/autoRefresh true
 /vis/viewer/refresh
 /vis/verbose warnings
+/vis/set/touchable World 0 Envelope 0
+/vis/touchable/set/visibility false
+/vis/viewer/refresh
+/vis/scene/notifyHandlers
+/vis/set/touchable World 0 Envelope 0 Al_reflector2 0
+/vis/touchable/set/colour 1 0.21 0.82 1
+/vis/viewer/refresh
+/vis/scene/notifyHandlers
+/vis/set/touchable World 0 Envelope 0 Al_reflector1 0
+/vis/touchable/set/colour 1 0.27 0.82 1
+/vis/viewer/refresh
+/vis/scene/notifyHandlers
 /run/beamOn 1
 /vis/scene/notifyHandlers scene-0
+/analysis/h1/getVector
+/analysis/h2/getVector
+/run/beamOn 1
+/analysis/h1/getVector
+/analysis/h2/getVector
+/run/beamOn 1
+/analysis/h1/getVector
+/analysis/h2/getVector
+/run/beamOn 1
+/analysis/h1/getVector
+/analysis/h2/getVector
+/vis/viewer/set/transparencyByDepth 0.04 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 0.06 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 0.16 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 0.4 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 1.12 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 1.74 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 2 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 1.94 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 1.36 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 1.02 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 0.88 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 0.7 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 0.62 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 0.58 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 0.56 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 0.62 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 0.64 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 1.14 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 1.54 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 1.8 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 2 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 1.88 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 1.06 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 0.68 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 0.5 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 0.14 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 0 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 0.06 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 0.8 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 1.14 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 1.44 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 1.88 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 2 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 2 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 1.94 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 0 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 0 1
+/vis/viewer/refresh
+/vis/viewer/set/style c
+/vis/viewer/refresh
+/vis/viewer/set/hiddenEdge 0
+/vis/viewer/refresh
+/run/beamOn 30
 /analysis/h1/getVector
 /analysis/h2/getVector

@@ -889,6 +889,8 @@ CMakeFiles/mysim.dir/src/DetectorConstruction.cc.o: \
   /usr/local/include/Geant4/G4Visible.hh \
   /usr/local/include/Geant4/G4Visible.icc \
   /usr/local/include/Geant4/G4Box.icc \
+  /usr/local/include/Geant4/G4Tubs.hh \
+  /usr/local/include/Geant4/G4Tubs.icc \
   /usr/local/include/Geant4/G4Cons.hh \
   /usr/local/include/Geant4/G4Cons.icc \
   /usr/local/include/Geant4/G4LogicalVolume.hh \

@@ -29,6 +29,7 @@
 #include "DetectorConstruction.hh"
 
 #include "G4Box.hh"
+#include "G4Tubs.hh"
 #include "G4Cons.hh"
 #include "G4LogicalVolume.hh"
 #include "G4NistManager.hh"
@@ -62,10 +63,10 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   G4Element* I = nist->FindOrBuildElement("I");
   G4Element* Tl = nist->FindOrBuildElement("Tl");
     
-  G4Material* CsI_dop= new G4Material("CsI",4.51 * g/cm3,3);
-  CsI_dop-> AddElement(Cs,0.5101);
-  CsI_dop-> AddElement(I,0.48815);
-  CsI_dop-> AddElement(Tl,0.000173);
+  G4Material* CsI_dop= new G4Material("CsI(Tl)",4.51 * g/cm3,3);
+  CsI_dop-> AddElement(Cs,0.510114053035733);
+  CsI_dop-> AddElement(I,0.488156344412965);
+  CsI_dop-> AddElement(Tl,0.001729602551302);
     
 // making materials property table
   G4MaterialPropertiesTable*CsIMPT = new G4MaterialPropertiesTable();
@@ -119,13 +120,13 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 // ......................................
 
   //MAKING GLASS
-  G4Element* Si = nist->FindOrBuildElement("G4_Si");
-  G4Element* O = nist->FindOrBuildElement("G4_O");
+  G4Element* Si = nist->FindOrBuildElement("Si");
+  G4Element* O = nist->FindOrBuildElement("O");
 
-  G4Material* glass = new G4Material("Glass", 2.2 * g/cm3,2)
+  G4Material* glass = new G4Material("Glass", 2.2 * g/cm3,2);
 
-  glass-> AddElement(Si,natoms=1);
-  glass-> AddElement(O,natoms=2);
+  glass-> AddElement(Si,1);
+  glass-> AddElement(O,2);
 
   G4MaterialPropertiesTable*glassMPT = new G4MaterialPropertiesTable();
   
@@ -140,19 +141,19 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 
   //................................
 
-  //MAKING IPO
-  G4Element* In = nist->FindOrBuildElement("G4_In");
-  G4Element* Sn = nist->FindOrBuildElement("G4_Sn");
+  //MAKING ITO
+  G4Element* In = nist->FindOrBuildElement("In");
+  G4Element* Sn = nist->FindOrBuildElement("Sn");
 
-  G4Material* In2O3 = new G4Material("In2O3", 7.18 * g/cm3,2)
-  In203-> AddElement(In,natoms=2);
-  In203-> AddElement(O,natoms=3);
+  G4Material* In2O3 = new G4Material("In2O3", 7.18 * g/cm3,2);
+  In2O3-> AddElement(In,2);
+  In2O3-> AddElement(O,3);
 
-  G4Material* SnO2 = new G4Material("SnO2", 6.95 * g/cm3,2)
-  SnO2-> AddElement(Sn,natoms=1);
-  SnO2-> AddElement(O,natoms=2);
+  G4Material* SnO2 = new G4Material("SnO2", 6.95 * g/cm3,2);
+  SnO2-> AddElement(Sn,1);
+  SnO2-> AddElement(O,2);
 
-  G4Material* ITO = new G4Material("ITO", 7.14 * g/cm3,3)
+  G4Material* ITO = new G4Material("ITO", 7.14 * g/cm3,2);
   ITO-> AddMaterial(In2O3,0.9);
   ITO-> AddMaterial(SnO2,0.1);
 
@@ -169,6 +170,16 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   // .........................................................
   // ALUMINIUM
   G4Material* Al = nist->FindOrBuildMaterial("G4_Al"); 
+
+  G4MaterialPropertiesTable*Al_MPT = new G4MaterialPropertiesTable();
+  G4double Al_PhE[nEntries]={1.907*eV,1.99*eV,2.254*eV,2.431*eV,2.61*eV,3.1*eV};
+  G4double Rind_Al[nEntries]={1.5590,1.3858,1.0155,0.8492,0.72134,0.48774};
+  G4double AbsL_Al[nEntries]={0.006707*um, 0.006667*um, 0.006604*um,0.00658*um,0.006567*um, 0.00658*um};
+  
+  Al_MPT->AddProperty("RINDEX",Al_PhE,Rind_Al,nEntries);
+  Al_MPT->AddProperty("ABSLENGTH",Al_PhE, AbsL_Al,nEntries);  
+
+  Al->SetMaterialPropertiesTable(Al_MPT);
 
   // .........................................................
 
@@ -233,17 +244,17 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   G4ThreeVector Scint_pos = G4ThreeVector(0, 2 * cm, -8 * cm);
 
 // Box shape
-  G4double Scint_dx = 5. * cm;
-  G4double Scint_dy = 5. * cm;
+  G4double Scint_inner = 0 * cm;
+  G4double Scint_outer = 2.5 * cm;
   G4double Scint_dz = 0.5 * cm;
-  
-  auto Scint = new G4Box("CsI(Tl)",Scint_dx,Scint_dy,Scint_dz);
+
+
+  auto Scint = new G4Tubs("CsI(Tl)",Scint_inner,Scint_outer,Scint_dz,0.*deg,360.*deg);  // making the shape
 
   auto logic_Scint = new G4LogicalVolume(Scint,  // its solid
                                          Scint_mat,  // its material
                                          "CsI(Tl)");  // its name
     
-  //fScoringVolume = logicShape1;
 
   new G4PVPlacement(nullptr,  // no rotation
                     Scint_pos,  // at position
@@ -255,13 +266,112 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
                     checkOverlaps);  // overlaps checking
 
   //  //
+
+// REFLECTORS
+
+//AL CYLINDER
+  G4Material* Al_reflector_mat = Al;
+
+  G4ThreeVector Al_Ref_pos1 = G4ThreeVector(0, 2 * cm, -8 * cm);
+  
+  G4double  Al_thick= 0.002*cm;
+  G4double Al_ref_inner = 2.5 * cm;
+  G4double Al_ref_outer = Al_ref_inner + Al_thick;
+  G4double Al_ref_dz = 0.5 * cm;
+
+  auto Al_reflector1 = new G4Tubs("Al_reflector1",Al_ref_inner,Al_ref_outer,Al_ref_dz,0.*deg,360.*deg); 
+
+  auto logic_Al_reflector1 = new G4LogicalVolume(Al_reflector1,  // its solid
+                                         Al_reflector_mat,  // its material
+                                         "Al_reflector1");  // its name
+
+
+  new G4PVPlacement(nullptr,  // no rotation
+                    Al_Ref_pos1 ,  // at position
+                    logic_Al_reflector1,  // its logical volume
+                    "Al_reflector1",  // its name
+                    logicEnv,  // its mother  volume
+                    false,  // no boolean operation
+                    0,  // copy number
+                    checkOverlaps);  // overlaps checking
+
+//AL BASE
+G4ThreeVector Al_Ref_pos2 = G4ThreeVector(0, 2 * cm, Scint_pos.z() - Scint_dz);
+
+  G4double Al_ref2_inner = 0 * cm;
+  G4double Al_ref2_outer = Scint_outer + Al_thick;
+  G4double Al_ref2_dz = Al_thick;
+
+  auto Al_reflector2 = new G4Tubs("Al_reflector2",0.*cm,Al_ref2_outer,Al_ref2_dz,0.*deg,360.*deg); 
+
+  auto logic_Al_reflector2 = new G4LogicalVolume(Al_reflector2,  // its solid
+                                         Al_reflector_mat,  // its material
+                                         "Al_reflector2");  // its name
+
+  new G4PVPlacement(nullptr,  // no rotation
+                    Al_Ref_pos2 ,  // at position
+                    logic_Al_reflector2,  // its logical volume
+                    "Al_reflector2",  // its name
+                    logicEnv,  // its mother  volume
+                    false,  // no boolean operation
+                    0,  // copy number
+                    checkOverlaps);  // overlaps checking
+
+
+//GLASS LAYER
+
+  G4double glass_dx=47.35 * mm;
+  G4double glass_dy=26.65 * mm;
+  G4double glass_dz=0.55 *mm;
+
+  G4ThreeVector glass_pos = G4ThreeVector(0, 2 * cm, Scint_pos.z() + Scint_dz + glass_dz);
+
+  auto glass_layer = new G4Box("Glass",glass_dx,glass_dy,glass_dz);
+
+  auto logic_glass = new G4LogicalVolume(glass_layer,  // its solid
+                                         glass,  // its material
+                                         "Glass");  // its name
+
+  new G4PVPlacement(nullptr,  // no rotation
+                    glass_pos,  // at position
+                    logic_glass,  // its logical volume
+                    "Glass",  // its name
+                    logicEnv,  // its mother  volume
+                    false,  // no boolean operation
+                    0,  // copy number
+                    checkOverlaps);  // overlaps checking
+
+
+// ITO LAYER
+  G4double ITO_dx=47.35 * mm;
+  G4double ITO_dy=26.65 * mm;
+  G4double ITO_dz=45 * nm;
+
+  G4ThreeVector ITO_pos = G4ThreeVector(0, 2 * cm, glass_pos.z() + glass_dz + ITO_dz);
+
+  auto ITO_layer = new G4Box("ITO",ITO_dx,ITO_dy,ITO_dz);
+
+  auto logic_ITO = new G4LogicalVolume(ITO_layer,  // its solid
+                                         ITO,  // its material
+                                         "ITO");  // its name
+
+  new G4PVPlacement(nullptr,  // no rotation
+                    ITO_pos,  // at position
+                    logic_ITO,  // its logical volume
+                    "ITO",  // its name
+                    logicEnv,  // its mother  volume
+                    false,  // no boolean operation
+                    0,  // copy number
+                    checkOverlaps);  // overlaps checking
  
 // SETTING UP SILICON BLOCK
-  G4ThreeVector Si_pos = G4ThreeVector(0, 2 * cm, -7 * cm);
   
-  G4double aSi_dx=12. * cm;
-  G4double aSi_dy=10. * cm;
-  G4double aSi_dz=0.5 *cm;
+  G4double aSi_dx=47.35 * mm;
+  G4double aSi_dy=26.65 * mm;
+  G4double aSi_dz=120 *nm;
+
+  G4ThreeVector Si_pos = G4ThreeVector(0, 2 * cm, ITO_pos.z() + ITO_dz + aSi_dz);
+
   auto aSilicon =new G4Box("Silicon",aSi_dx,aSi_dy,aSi_dz); // making the shape
   
 
@@ -283,6 +393,30 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   fScoringVolume = logic_aSi;
 
   //
+
+  // ALUMINIUM LAYER
+  G4double Al_dx=47.35 * mm;
+  G4double Al_dy=26.65 * mm;
+  G4double Al_dz=100 *nm;
+
+  G4ThreeVector Al_pos = G4ThreeVector(0, 2 * cm, Si_pos.z() + aSi_dz + Al_dz);
+
+  auto Al_layer = new G4Box("Aluminium",Al_dx,Al_dy,Al_dz);
+
+  auto logic_Al = new G4LogicalVolume(Al_layer,  // its solid
+                                         Al,  // its material
+                                         "Aluminium");  // its name
+
+  new G4PVPlacement(nullptr,  // no rotation
+                    Al_pos,  // at position
+                    logic_Al,  // its logical volume
+                    "Aluminium",  // its name
+                    logicEnv,  // its mother  volume
+                    false,  // no boolean operation
+                    0,  // copy number
+                    checkOverlaps);  // overlaps checking
+
+
   // always return the physical World
  
  
