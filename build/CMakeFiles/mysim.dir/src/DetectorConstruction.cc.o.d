@@ -969,4 +969,12 @@ CMakeFiles/mysim.dir/src/DetectorConstruction.cc.o: \
   /usr/local/include/Geant4/G4Pow.hh /usr/local/include/Geant4/G4Exp.hh \
   /usr/local/include/Geant4/G4PVPlacement.hh \
   /usr/local/include/Geant4/G4SystemOfUnits.hh \
+  /usr/local/include/Geant4/G4OpticalSurface.hh \
+  /usr/local/include/Geant4/G4Physics2DVector.hh \
+  /usr/local/include/Geant4/G4Physics2DVector.icc \
+  /usr/local/include/Geant4/G4SurfaceProperty.hh \
+  /usr/local/include/Geant4/G4LogicalBorderSurface.hh \
+  /usr/local/include/Geant4/G4LogicalSurface.hh \
+  /usr/local/include/Geant4/G4LogicalSurface.icc \
+  /usr/local/include/Geant4/G4LogicalBorderSurface.icc \
   /usr/local/include/Geant4/G4Trd.hh /usr/local/include/Geant4/G4Trd.icc

@@ -35,6 +35,8 @@
 #include "G4NistManager.hh"
 #include "G4PVPlacement.hh"
 #include "G4SystemOfUnits.hh"
+#include "G4OpticalSurface.hh"
+#include "G4LogicalBorderSurface.hh"
 #include "G4Material.hh"
 #include "G4Trd.hh"
 
@@ -168,7 +170,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   ITO->SetMaterialPropertiesTable(ITO_MPT);
 
   // .........................................................
-  // ALUMINIUM
+  // BULK ALUMINIUM
   G4Material* Al = nist->FindOrBuildMaterial("G4_Al"); 
 
   G4MaterialPropertiesTable*Al_MPT = new G4MaterialPropertiesTable();
@@ -180,6 +182,24 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   Al_MPT->AddProperty("ABSLENGTH",Al_PhE, AbsL_Al,nEntries);  
 
   Al->SetMaterialPropertiesTable(Al_MPT);
+
+
+  // SURFACE ALUMINIUM
+  G4OpticalSurface* Al_surface = new G4OpticalSurface("Al_surface");
+
+  G4MaterialPropertiesTable*AlSur_MPT = new G4MaterialPropertiesTable();
+
+  Al_surface->SetType(dielectric_metal);
+  Al_surface->SetFinish(polished);
+  Al_surface->SetModel(unified);
+
+  //defining imaginary  parts of refractive index, we  already have real ones in Rind_Al
+  G4double ImaginaryRind_Al[nEntries]={7.714,7.4369,6.6280,6.1649,5.7560,4.8349};
+
+  AlSur_MPT->AddProperty("REALRINDEX",Al_PhE,Rind_Al,nEntries);
+  AlSur_MPT->AddProperty("IMAGINARYRINDEX",Al_PhE,ImaginaryRind_Al,nEntries);
+
+  Al_surface->SetMaterialPropertiesTable(AlSur_MPT);  
 
   // .........................................................
 
@@ -256,7 +276,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
                                          "CsI(Tl)");  // its name
     
 
-  new G4PVPlacement(nullptr,  // no rotation
+  G4VPhysicalVolume* phys_Scint = new G4PVPlacement(nullptr,  // no rotation
                     Scint_pos,  // at position
                     logic_Scint,  // its logical volume
                     "CsI(Tl)",  // its name
@@ -286,7 +306,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
                                          "Al_reflector1");  // its name
 
 
-  new G4PVPlacement(nullptr,  // no rotation
+  G4VPhysicalVolume* phys_Al_reflector1 = new G4PVPlacement(nullptr,  // no rotation
                     Al_Ref_pos1 ,  // at position
                     logic_Al_reflector1,  // its logical volume
                     "Al_reflector1",  // its name
@@ -296,10 +316,10 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
                     checkOverlaps);  // overlaps checking
 
 //AL BASE
-G4ThreeVector Al_Ref_pos2 = G4ThreeVector(0, 2 * cm, Scint_pos.z() - Scint_dz);
+G4ThreeVector Al_Ref_pos2 = G4ThreeVector(0, 2 * cm, Scint_pos.z() - Scint_dz-Al_thick);
 
   G4double Al_ref2_inner = 0 * cm;
-  G4double Al_ref2_outer = Scint_outer + Al_thick;
+  G4double Al_ref2_outer = Scint_outer - Al_thick;
   G4double Al_ref2_dz = Al_thick;
 
   auto Al_reflector2 = new G4Tubs("Al_reflector2",0.*cm,Al_ref2_outer,Al_ref2_dz,0.*deg,360.*deg); 
@@ -308,7 +328,7 @@ G4ThreeVector Al_Ref_pos2 = G4ThreeVector(0, 2 * cm, Scint_pos.z() - Scint_dz);
                                          Al_reflector_mat,  // its material
                                          "Al_reflector2");  // its name
 
-  new G4PVPlacement(nullptr,  // no rotation
+  G4VPhysicalVolume* phys_Al_reflector2 = new G4PVPlacement(nullptr,  // no rotation
                     Al_Ref_pos2 ,  // at position
                     logic_Al_reflector2,  // its logical volume
                     "Al_reflector2",  // its name
@@ -317,6 +337,11 @@ G4ThreeVector Al_Ref_pos2 = G4ThreeVector(0, 2 * cm, Scint_pos.z() - Scint_dz);
                     0,  // copy number
                     checkOverlaps);  // overlaps checking
 
+
+//DEFINING OPTICAL SURFACE FOR THE ALUMINIUM REFLECTOR
+
+G4LogicalBorderSurface* Al_reflector1_surface = new G4LogicalBorderSurface("Al_reflector1_surface",phys_Scint,phys_Al_reflector1,Al_surface);
+G4LogicalBorderSurface* Al_reflector2_surface = new G4LogicalBorderSurface("Al_reflector2_surface",phys_Scint,phys_Al_reflector2,Al_surface);
 
 //GLASS LAYER
 

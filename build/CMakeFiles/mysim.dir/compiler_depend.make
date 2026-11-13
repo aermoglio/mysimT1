@@ -3070,6 +3070,10 @@ CMakeFiles/mysim.dir/src/DetectorConstruction.cc.o: /Users/alinaermoglio/geant4-
   /usr/local/include/Geant4/G4Isotope.hh \
   /usr/local/include/Geant4/G4IsotopeVector.hh \
   /usr/local/include/Geant4/G4Log.hh \
+  /usr/local/include/Geant4/G4LogicalBorderSurface.hh \
+  /usr/local/include/Geant4/G4LogicalBorderSurface.icc \
+  /usr/local/include/Geant4/G4LogicalSurface.hh \
+  /usr/local/include/Geant4/G4LogicalSurface.icc \
   /usr/local/include/Geant4/G4LogicalVolume.hh \
   /usr/local/include/Geant4/G4LogicalVolume.icc \
   /usr/local/include/Geant4/G4Material.hh \
@@ -3081,8 +3085,11 @@ CMakeFiles/mysim.dir/src/DetectorConstruction.cc.o: /Users/alinaermoglio/geant4-
   /usr/local/include/Geant4/G4NistManager.hh \
   /usr/local/include/Geant4/G4NistMaterialBuilder.hh \
   /usr/local/include/Geant4/G4Normal3D.hh \
+  /usr/local/include/Geant4/G4OpticalSurface.hh \
   /usr/local/include/Geant4/G4OrderedTable.hh \
   /usr/local/include/Geant4/G4PVPlacement.hh \
+  /usr/local/include/Geant4/G4Physics2DVector.hh \
+  /usr/local/include/Geant4/G4Physics2DVector.icc \
   /usr/local/include/Geant4/G4PhysicsFreeVector.hh \
   /usr/local/include/Geant4/G4PhysicsVector.hh \
   /usr/local/include/Geant4/G4PhysicsVector.icc \
@@ -3096,6 +3103,7 @@ CMakeFiles/mysim.dir/src/DetectorConstruction.cc.o: /Users/alinaermoglio/geant4-
   /usr/local/include/Geant4/G4SandiaTable.hh \
   /usr/local/include/Geant4/G4String.hh \
   /usr/local/include/Geant4/G4String.icc \
+  /usr/local/include/Geant4/G4SurfaceProperty.hh \
   /usr/local/include/Geant4/G4SystemOfUnits.hh \
   /usr/local/include/Geant4/G4Threading.hh \
   /usr/local/include/Geant4/G4ThreeVector.hh \
@@ -7554,7 +7562,13 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 
 /usr/local/include/Geant4/G4SystemOfUnits.hh:
 
+/usr/local/include/Geant4/G4Physics2DVector.icc:
+
+/usr/local/include/Geant4/G4Physics2DVector.hh:
+
 /usr/local/include/Geant4/G4PVPlacement.hh:
+
+/usr/local/include/Geant4/G4LogicalSurface.icc:
 
 /usr/local/include/Geant4/G4ICRU90StoppingData.hh:
 
@@ -7669,6 +7683,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 /usr/local/include/Geant4/G4THnMessenger.hh:
 
 /usr/local/include/Geant4/G4Tubs.icc:
+
+/usr/local/include/Geant4/G4OpticalSurface.hh:
 
 /usr/local/include/Geant4/G4Tubs.hh:
 
@@ -7797,6 +7813,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 /usr/local/include/Geant4/G4PhysicsVector.hh:
 
 /usr/local/include/Geant4/G4PhysicsTable.icc:
+
+/usr/local/include/Geant4/G4LogicalBorderSurface.hh:
 
 /usr/local/include/Geant4/G4PhysicsModelCatalog.hh:
 
@@ -7941,6 +7959,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 /usr/local/include/Geant4/G4Element.hh:
 
 /usr/local/include/Geant4/CLHEP/Vector/RotationInterfaces.h:
+
+/usr/local/include/Geant4/G4SurfaceProperty.hh:
 
 /usr/local/include/Geant4/G4LogicalVolume.hh:
 
@@ -8425,6 +8445,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 /usr/local/include/Geant4/G4OpticalPhysics.hh:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__vector/vector.h:
+
+/usr/local/include/Geant4/G4LogicalBorderSurface.icc:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__vector/swap.h:
 
@@ -9513,6 +9535,8 @@ CMakeFiles/mysim.dir/src/SteppingAction.cc.o: /Users/alinaermoglio/geant4-v11.4.
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/temp_value.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder2nd.h:
+
+/usr/local/include/Geant4/G4LogicalSurface.hh:
 
 /usr/local/include/Geant4/G4VoxelNavigation.hh:
 
