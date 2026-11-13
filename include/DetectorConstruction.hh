@@ -34,7 +34,7 @@
 class G4VPhysicalVolume;
 class G4LogicalVolume;
 
-namespace B1
+namespace CsI_Tl
 {
 
 /// Detector construction class to define materials and geometry.

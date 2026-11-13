@@ -35,7 +35,7 @@ class G4ParticleGun;
 class G4Event;
 class G4Box;
 
-namespace B1
+namespace CsI_Tl
 {
 
 /// The primary generator action class with particle gun.

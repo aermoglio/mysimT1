@@ -40,7 +40,7 @@
 #include "G4Material.hh"
 #include "G4Trd.hh"
 
-namespace B1
+namespace CsI_Tl
 {
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

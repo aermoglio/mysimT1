@@ -31,7 +31,7 @@
 
 #include "G4VUserActionInitialization.hh"
 
-namespace B1
+namespace CsI_Tl
 {
 
 /// Action initialization class.

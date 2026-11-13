@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/mysim.dir/exampleB1.cc.o"
-  "CMakeFiles/mysim.dir/exampleB1.cc.o.d"
+  "CMakeFiles/mysim.dir/CsITl.cc.o"
+  "CMakeFiles/mysim.dir/CsITl.cc.o.d"
   "CMakeFiles/mysim.dir/src/ActionInitialization.cc.o"
   "CMakeFiles/mysim.dir/src/ActionInitialization.cc.o.d"
   "CMakeFiles/mysim.dir/src/DetectorConstruction.cc.o"

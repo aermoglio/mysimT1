@@ -34,7 +34,7 @@
 
 class G4Event;
 
-namespace B1
+namespace CsI_Tl
 {
 
 class RunAction;

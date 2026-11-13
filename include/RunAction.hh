@@ -36,7 +36,7 @@
 
 class G4Run;
 
-namespace B1
+namespace CsI_Tl
 {
 
 /// Run action class

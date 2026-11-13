@@ -37,7 +37,7 @@
 #include "G4VisExecutive.hh"
 // #include "Randomize.hh"
 
-using namespace B1;
+using namespace CsI_Tl;
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 

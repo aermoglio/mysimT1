@@ -20,7 +20,7 @@ file(GLOB headers ${PROJECT_SOURCE_DIR}/include/*.hh)
 #----------------------------------------------------------------------------
 # Add the executable, use our local headers, and link it to the Geant4 libraries
 #
-add_executable(mysim exampleB1.cc ${sources} ${headers})
+add_executable(mysim CsITl.cc ${sources} ${headers})
 target_include_directories(mysim PRIVATE include)
 target_link_libraries(mysim PRIVATE ${Geant4_LIBRARIES})
 

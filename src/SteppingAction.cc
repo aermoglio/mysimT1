@@ -39,7 +39,7 @@
 #include "G4RunManager.hh"
 #include "G4Step.hh"
 
-namespace B1
+namespace CsI_Tl
 {
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

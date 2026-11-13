@@ -42,7 +42,7 @@
 #include "G4SystemOfUnits.hh"
 #include "G4UnitsTable.hh"
 
-namespace B1
+namespace CsI_Tl
 {
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

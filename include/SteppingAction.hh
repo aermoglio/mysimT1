@@ -34,7 +34,7 @@
 class G4LogicalVolume;
 class G4Step;
 
-namespace B1
+namespace CsI_Tl
 {
 
 class EventAction;
