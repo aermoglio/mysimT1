@@ -65,7 +65,24 @@
 /vis/viewer/set/autoRefresh true
 /vis/viewer/refresh
 /vis/verbose warnings
-/run/beamOn 30
+/run/beamOn 10
 /vis/scene/notifyHandlers scene-0
 /analysis/h1/getVector
 /analysis/h2/getVector
+/vis/set/touchable World 0 Envelope 0 Al_reflector2 0
+/vis/touchable/set/colour 1 0.4 0.8 1
+/vis/viewer/refresh
+/vis/scene/notifyHandlers
+/run/beamOn 30
+/analysis/h1/getVector
+/analysis/h2/getVector
+/vis/viewer/set/transparencyByDepth 0.06 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 0.06 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 0.08 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 0.08 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 1.9 1
+/vis/viewer/refresh

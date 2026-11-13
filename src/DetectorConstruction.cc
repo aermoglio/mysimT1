@@ -316,11 +316,11 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
                     checkOverlaps);  // overlaps checking
 
 //AL BASE
-G4ThreeVector Al_Ref_pos2 = G4ThreeVector(0, 2 * cm, Scint_pos.z() - Scint_dz-Al_thick);
+G4ThreeVector Al_Ref_pos2 = G4ThreeVector(0, 2 * cm, Scint_pos.z() - Scint_dz-Al_thick/2);
 
   G4double Al_ref2_inner = 0 * cm;
-  G4double Al_ref2_outer = Scint_outer - Al_thick;
-  G4double Al_ref2_dz = Al_thick;
+  G4double Al_ref2_outer = Scint_outer + Al_thick;
+  G4double Al_ref2_dz = Al_thick/2;
 
   auto Al_reflector2 = new G4Tubs("Al_reflector2",0.*cm,Al_ref2_outer,Al_ref2_dz,0.*deg,360.*deg); 
 
