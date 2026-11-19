@@ -118,8 +118,9 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   aSiMPT->AddProperty("RINDEX",aSi_PhE,Rind_aSi,nEntries);
   aSiMPT->AddProperty("ABSLENGTH",aSi_PhE, AbsL_aSi,nEntries);  
   aSi->SetMaterialPropertiesTable(aSiMPT);
-
-// ......................................
+ 
+ 
+ // ......................................
 
   //MAKING GLASS
   G4Element* Si = nist->FindOrBuildElement("Si");
@@ -404,7 +405,7 @@ G4LogicalBorderSurface* Al_reflector2_surface = new G4LogicalBorderSurface("Al_r
                                          aSi,  // its material
                                          "Silicon");  // its name
 
-  new G4PVPlacement(nullptr,  // no rotation
+  G4VPhysicalVolume* phys_Silicon= new G4PVPlacement(nullptr,  // no rotation
                     Si_pos,  // at position
                     logic_aSi,  // its logical volume
                     "Silicon",  // its name
@@ -412,10 +413,6 @@ G4LogicalBorderSurface* Al_reflector2_surface = new G4LogicalBorderSurface("Al_r
                     false,  // no boolean operation
                     0,  // copy number
                     checkOverlaps);  // overlaps checking
-
-  // Set SILICON as scoring volume
-  //
-  fScoringVolume = logic_aSi;
 
   //
 
@@ -432,7 +429,7 @@ G4LogicalBorderSurface* Al_reflector2_surface = new G4LogicalBorderSurface("Al_r
                                          Al,  // its material
                                          "Aluminium");  // its name
 
-  new G4PVPlacement(nullptr,  // no rotation
+  G4VPhysicalVolume* phys_Al_layer= new G4PVPlacement(nullptr,  // no rotation
                     Al_pos,  // at position
                     logic_Al,  // its logical volume
                     "Aluminium",  // its name
@@ -442,9 +439,14 @@ G4LogicalBorderSurface* Al_reflector2_surface = new G4LogicalBorderSurface("Al_r
                     checkOverlaps);  // overlaps checking
 
 
-  // always return the physical World
+// setting reflectivity for solar panel aluminium surface (going from silicon to aluminium) 
+G4LogicalBorderSurface* Al_layer_surface = new G4LogicalBorderSurface("Al_layer_surface",phys_Silicon,phys_Al_layer,Al_surface);
+
  
- 
+  scintScoringVolume = logic_Scint;
+  SiScoringVolume = logic_aSi;
+
+
   //
   return physWorld;
 }

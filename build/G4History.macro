@@ -43,8 +43,6 @@
 /vis/scene/notifyHandlers
 /vis/scene/add/date
 /vis/scene/notifyHandlers
-/vis/scene/add/logo2D
-/vis/scene/notifyHandlers
 /vis/set/colour red
 /vis/set/lineWidth 2
 /vis/scene/add/frame
@@ -61,3 +59,10 @@
 /vis/viewer/set/autoRefresh true
 /vis/viewer/refresh
 /vis/verbose warnings
+/run/beamOn 1
+/vis/scene/notifyHandlers scene-0
+/analysis/h1/getVector
+/analysis/h2/getVector
+/run/beamOn 50
+/analysis/h1/getVector
+/analysis/h2/getVector
