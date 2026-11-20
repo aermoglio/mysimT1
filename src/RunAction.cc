@@ -99,10 +99,13 @@ void RunAction::BeginOfRunAction(const G4Run* run)
   analysisManager->CreateNtupleDColumn("Energy Deposited in CsI by single Gamma (MeV)");  // column 1
 
   analysisManager->CreateNtupleDColumn("Total energy deposited in Si (all particles) (MeV)"); //column 2
+
   analysisManager->CreateNtupleDColumn("Total energy deposited in Glass (all particles) (MeV)"); //column 3
+
   analysisManager->CreateNtupleDColumn("Total energy deposited in ITO (all particles) (MeV)"); //column 4
 
   analysisManager->CreateNtupleDColumn("Energy Deposited in Si by All Photons (MeV)");  // column 5
+
   analysisManager->CreateNtupleIColumn("Number of Produced Scintillation Photons"); //column 6
   analysisManager->CreateNtupleIColumn("Number of Photons absorbed by Si"); //column 7
   analysisManager->FinishNtuple();

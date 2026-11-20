@@ -89,10 +89,13 @@ void EventAction::EndOfEventAction(const G4Event* event)
   analysisManager->FillNtupleDColumn(0,1, fEdep);
 
   analysisManager->FillNtupleDColumn(0,2, fEdepSiTot);
+
   analysisManager->FillNtupleDColumn(0,3, fEdepGlassTot);
+
   analysisManager->FillNtupleDColumn(0,4, fEdepITOTot);
 
   analysisManager->FillNtupleDColumn(0,5, fSiPhotonEdep);
+
   analysisManager->FillNtupleIColumn(0,6, fScintillationPhotons);
   analysisManager->FillNtupleIColumn(0,7, fAbsorbedPhotons);
   analysisManager->AddNtupleRow(0);

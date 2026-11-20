@@ -71,16 +71,21 @@ class EventAction : public G4UserEventAction
   private:
     RunAction* fRunAction = nullptr;
     G4double fEdep = 0.;
+    G4double fEdep2 = 0.;
 
     G4double fEdepComp = 0.;
     G4double fEdepPhotElec = 0.;
 
     G4double fEdepSiTot = 0.;
+    G4double fEdepSiTot2 = 0.;
     G4double fEdepGlassTot = 0.;
+    G4double fEdepGlassTot2 = 0.;
     G4double fEdepITOTot = 0.;
+    G4double fEdepITOTot2 = 0.;
 
     G4double fScintillationPhotons = 0.;
     G4double fSiPhotonEdep = 0.;
+    G4double fSiPhotonEdep2 = 0.;
     G4double fAbsorbedPhotons = 0;
 };
 
