@@ -52,7 +52,12 @@ class EventAction : public G4UserEventAction
 
   //functions for outputs
 
-    void AddEdep(G4double edep) { fEdep += edep; }
+    void AddEdep(G4double edep) { fEdep += edep; }   //SCINTILLATOR
+
+    void AddEdepSiliconTotal(G4double edepSiTot) { fEdepSiTot += edepSiTot; }
+    void AddEdepGlassTotal(G4double edepGlassTot) { fEdepGlassTot += edepGlassTot; }
+    void AddEdepITOTotal(G4double edepITOTot) { fEdepITOTot += edepITOTot; }
+
     void AddScintillationPhoton() { fScintillationPhotons += 1; }   //function to count the number of scintillation photons produced in each event
     void AddSiPhotonEdep(G4double SiPhotonEdep){fSiPhotonEdep += SiPhotonEdep;}
     void AddAbsorbedPhoton(){fAbsorbedPhotons += 1;}
@@ -60,6 +65,11 @@ class EventAction : public G4UserEventAction
   private:
     RunAction* fRunAction = nullptr;
     G4double fEdep = 0.;
+
+    G4double fEdepSiTot = 0.;
+    G4double fEdepGlassTot = 0.;
+    G4double fEdepITOTot = 0.;
+
     G4double fScintillationPhotons = 0.;
     G4double fSiPhotonEdep = 0.;
     G4double fAbsorbedPhotons = 0;

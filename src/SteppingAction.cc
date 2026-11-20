@@ -67,6 +67,8 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
       G4RunManager::GetRunManager()->GetUserDetectorConstruction());
     scintScoringVolume = detConstruction->GetScintScoringVolume();
     SiScoringVolume = detConstruction->GetSiScoringVolume();
+    GlassScoringVolume = detConstruction->GetGlassScoringVolume();
+    ITOScoringVolume = detConstruction->GetITOScoringVolume();
   }
 
   // get volume of the current step
@@ -74,14 +76,30 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
     step->GetPreStepPoint()->GetTouchableHandle()->GetVolume()->GetLogicalVolume();
 
   // check if we are in any scoring volume
-  if (volume != scintScoringVolume && volume != SiScoringVolume) {return;}
+  if (volume != scintScoringVolume && volume != SiScoringVolume && volume!=GlassScoringVolume && volume!=ITOScoringVolume) {return;}
 
   if (volume == scintScoringVolume){
   G4double edepStep = step->GetTotalEnergyDeposit();
   fEventAction->AddEdep(edepStep);
 }
 
+if (volume==GlassScoringVolume){
+  G4double edepGlassTotStep=step->GetTotalEnergyDeposit();
+  fEventAction-> AddEdepGlassTotal(edepGlassTotStep);
+}
+
+if (volume==ITOScoringVolume){
+  G4double edepITOTotStep=step->GetTotalEnergyDeposit();
+  fEventAction-> AddEdepITOTotal(edepITOTotStep);
+}
+
 if (volume == SiScoringVolume){
+
+  //calculating total energy deposited in the silicon (not just fro  optical photons)
+  G4double edepSiTotStep=step->GetTotalEnergyDeposit();
+  fEventAction->AddEdepSiliconTotal(edepSiTotStep);      // adding the total energy deposition of that step
+  
+// just for optical photons:
   G4Track* track= step->GetTrack();
   const G4ParticleDefinition* particle = track->GetDefinition();
 

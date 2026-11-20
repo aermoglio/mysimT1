@@ -63,6 +63,38 @@
 /vis/scene/notifyHandlers scene-0
 /analysis/h1/getVector
 /analysis/h2/getVector
-/run/beamOn 50
+/run/beamOn 1
 /analysis/h1/getVector
 /analysis/h2/getVector
+/run/beamOn 1
+/analysis/h1/getVector
+/analysis/h2/getVector
+/run/beamOn 1
+/analysis/h1/getVector
+/analysis/h2/getVector
+/vis/viewer/set/transparencyByDepth 0.02 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 0.04 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 0.12 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 0.8 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 1.54 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 1.78 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 1.8 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 1.82 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 1.84 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 1.94 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 1.96 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 2 1
+/vis/viewer/refresh
+/vis/viewer/set/transparencyByDepth 2 1
+/vis/viewer/refresh

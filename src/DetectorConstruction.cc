@@ -445,6 +445,8 @@ G4LogicalBorderSurface* Al_layer_surface = new G4LogicalBorderSurface("Al_layer_
  
   scintScoringVolume = logic_Scint;
   SiScoringVolume = logic_aSi;
+  GlassScoringVolume=logic_Glass;
+  ITOScoringVolume=logic_ITO;
 
 
   //

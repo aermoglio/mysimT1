@@ -49,10 +49,14 @@ class DetectorConstruction : public G4VUserDetectorConstruction
 
     G4LogicalVolume* GetScintScoringVolume() const { return scintScoringVolume; }
     G4LogicalVolume* GetSiScoringVolume() const { return SiScoringVolume; }
+    G4LogicalVolume* GetGlassScoringVolume() const { return GlassScoringVolume; }
+    G4LogicalVolume* GetITOScoringVolume() const { return ITOScoringVolume; }
 
   protected:
     G4LogicalVolume* scintScoringVolume = nullptr;
     G4LogicalVolume* SiScoringVolume = nullptr;
+    G4LogicalVolume* GlassScoringVolume = nullptr;
+    G4LogicalVolume* ITOScoringVolume = nullptr;
 };
 
 }  // namespace B1

@@ -55,6 +55,11 @@ class RunAction : public G4UserRunAction
     void EndOfRunAction(const G4Run*) override;
 
     void AddEdep(G4double edep);
+
+    void AddEdepSiliconTotal(G4double edepSiTot);
+    void AddEdepGlassTotal(G4double edepGlassTot);
+    void AddEdepITOTotal(G4double edepITOTot);
+
     void AddScintillationPhoton(G4double photons);
     void AddSiPhotonEdep(G4double SiPhotonEdep);
     void AddAbsorbedPhoton(G4double abphotons);
@@ -62,9 +67,21 @@ class RunAction : public G4UserRunAction
   private:
     G4Accumulable<G4double> fEdep = 0.;
     G4Accumulable<G4double> fEdep2 = 0.;
+
+    G4Accumulable<G4double> fEdepSiTot = 0.;
+    G4Accumulable<G4double> fEdepSiTot2 = 0.;
+
+    G4Accumulable<G4double> fEdepGlassTot = 0.;
+    G4Accumulable<G4double> fEdepGlassTot2 = 0.;
+
+    G4Accumulable<G4double> fEdepITOTot = 0.;
+    G4Accumulable<G4double> fEdepITOTot2 = 0.;
+
     G4Accumulable<G4int> fScintillationPhotons = 0.;
+
     G4Accumulable<G4double> fSiPhotonEdep = 0.;
     G4Accumulable<G4double> fSiPhotonEdep2 = 0.;
+
     G4Accumulable<G4int> fAbsorbedPhotons = 0.;
 };
 

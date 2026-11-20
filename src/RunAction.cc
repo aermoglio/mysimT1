@@ -65,6 +65,16 @@ RunAction::RunAction()
   G4AccumulableManager* accumulableManager = G4AccumulableManager::Instance();
   accumulableManager->Register(fEdep);
   accumulableManager->Register(fEdep2);
+
+  accumulableManager->Register(fEdepSiTot);
+  accumulableManager->Register(fEdepSiTot2);
+
+  accumulableManager->Register(fEdepGlassTot);
+  accumulableManager->Register(fEdepGlassTot2);
+
+  accumulableManager->Register(fEdepITOTot);
+  accumulableManager->Register(fEdepITOTot2);
+
   accumulableManager->Register(fSiPhotonEdep);
   accumulableManager->Register(fSiPhotonEdep2);
 }
@@ -84,9 +94,14 @@ void RunAction::BeginOfRunAction(const G4Run* run)
   analysisManager->CreateNtuple("EventData", "CsI(Tl)");   //tuple 0 // the first option of the tuple is appended after run number in the CSV name
   analysisManager->CreateNtupleIColumn("Event"); //column0
   analysisManager->CreateNtupleDColumn("Energy Deposited in CsI by single Gamma (MeV)");  // column 1
-  analysisManager->CreateNtupleDColumn("Energy Deposited in Si by All Photons (MeV)");  // column 2
-  analysisManager->CreateNtupleIColumn("Number of Produced Scintillation Photons"); //column 3
-  analysisManager->CreateNtupleIColumn("Number of Photons absorbed by Si"); //column 4
+
+  analysisManager->CreateNtupleDColumn("Total energy deposited in Si (all particles) (MeV)"); //column 2
+  analysisManager->CreateNtupleDColumn("Total energy deposited in Glass (all particles) (MeV)"); //column 3
+  analysisManager->CreateNtupleDColumn("Total energy deposited in ITO (all particles) (MeV)"); //column 4
+
+  analysisManager->CreateNtupleDColumn("Energy Deposited in Si by All Photons (MeV)");  // column 5
+  analysisManager->CreateNtupleIColumn("Number of Produced Scintillation Photons"); //column 6
+  analysisManager->CreateNtupleIColumn("Number of Photons absorbed by Si"); //column 7
   analysisManager->FinishNtuple();
 
  // photon absorbtion data
@@ -95,6 +110,9 @@ void RunAction::BeginOfRunAction(const G4Run* run)
   analysisManager->CreateNtupleIColumn("Photon Track num");  // column 1
   analysisManager->CreateNtupleDColumn("Energy Deposited in Si by single photon (MeV)");  // column 2
   analysisManager->FinishNtuple();
+
+
+  // energy deposition data on scintillator
 
 
   // inform the runManager to save random number seed
@@ -181,6 +199,25 @@ void RunAction::AddScintillationPhoton(G4double photons)
 {
   fScintillationPhotons += photons;
 }
+
+void RunAction::AddEdepSiliconTotal(G4double edepSiTot)
+{
+  fEdepSiTot += edepSiTot;
+  fEdepSiTot2 += edepSiTot * edepSiTot;
+}
+
+void RunAction::AddEdepGlassTotal(G4double edepGlassTot)
+{
+  fEdepGlassTot += edepGlassTot;
+  fEdepGlassTot2 += edepGlassTot * edepGlassTot;
+}
+
+void RunAction::AddEdepITOTotal(G4double edepITOTot)
+{
+  fEdepITOTot += edepITOTot;
+  fEdepITOTot2 += edepITOTot * edepITOTot;
+}
+
 
 void RunAction::AddSiPhotonEdep(G4double SiPhotonEdep)
 {
