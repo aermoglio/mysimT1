@@ -69,6 +69,9 @@ RunAction::RunAction()
   accumulableManager->Register(fEdepSiTot);
   accumulableManager->Register(fEdepSiTot2);
 
+  accumulableManager->Register(fEdepComp);
+  accumulableManager->Register(fEdepPhotElec);
+
   accumulableManager->Register(fEdepGlassTot);
   accumulableManager->Register(fEdepGlassTot2);
 
@@ -113,7 +116,12 @@ void RunAction::BeginOfRunAction(const G4Run* run)
 
 
   // energy deposition data on scintillator
-
+  analysisManager->CreateNtuple("EnergyDepositionData", "CsI(Tl)");   //tuple 2
+  analysisManager->CreateNtupleIColumn("Event");  // column 0
+  analysisManager->CreateNtupleDColumn("Total edep");  // column 1
+  analysisManager->CreateNtupleDColumn("Compton edep");  // column 2
+  analysisManager->CreateNtupleDColumn("Photoelectric edep");  // column 3
+  analysisManager->FinishNtuple();
 
   // inform the runManager to save random number seed
   G4RunManager::GetRunManager()->SetRandomNumberStore(false);
@@ -193,6 +201,16 @@ void RunAction::AddEdep(G4double edep)
 {
   fEdep += edep;
   fEdep2 += edep * edep;
+}
+
+void RunAction::AddEdepComp(G4double edepComp)
+{
+  fEdepComp += edepComp;
+}
+
+void RunAction::AddEdepPhotElec(G4double edepPhotElec)
+{
+  fEdepPhotElec  += edepPhotElec;
 }
 
 void RunAction::AddScintillationPhoton(G4double photons)

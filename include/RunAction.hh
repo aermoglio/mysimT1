@@ -55,6 +55,8 @@ class RunAction : public G4UserRunAction
     void EndOfRunAction(const G4Run*) override;
 
     void AddEdep(G4double edep);
+    void AddEdepComp(G4double edepComp);
+    void AddEdepPhotElec(G4double edepPhotElec);
 
     void AddEdepSiliconTotal(G4double edepSiTot);
     void AddEdepGlassTotal(G4double edepGlassTot);
@@ -67,6 +69,9 @@ class RunAction : public G4UserRunAction
   private:
     G4Accumulable<G4double> fEdep = 0.;
     G4Accumulable<G4double> fEdep2 = 0.;
+
+    G4Accumulable<G4double> fEdepComp = 0.;
+    G4Accumulable<G4double> fEdepPhotElec = 0.;
 
     G4Accumulable<G4double> fEdepSiTot = 0.;
     G4Accumulable<G4double> fEdepSiTot2 = 0.;

@@ -54,6 +54,12 @@ class EventAction : public G4UserEventAction
 
     void AddEdep(G4double edep) { fEdep += edep; }   //SCINTILLATOR
 
+    //gamma interaction processes
+    void AddEdepComp(G4double edepComp){ fEdepComp += edepComp; }
+    void AddEdepPhotElec(G4double edepPhotElec){ fEdepPhotElec += edepPhotElec; }
+
+    //energy deposition
+
     void AddEdepSiliconTotal(G4double edepSiTot) { fEdepSiTot += edepSiTot; }
     void AddEdepGlassTotal(G4double edepGlassTot) { fEdepGlassTot += edepGlassTot; }
     void AddEdepITOTotal(G4double edepITOTot) { fEdepITOTot += edepITOTot; }
@@ -65,6 +71,9 @@ class EventAction : public G4UserEventAction
   private:
     RunAction* fRunAction = nullptr;
     G4double fEdep = 0.;
+
+    G4double fEdepComp = 0.;
+    G4double fEdepPhotElec = 0.;
 
     G4double fEdepSiTot = 0.;
     G4double fEdepGlassTot = 0.;

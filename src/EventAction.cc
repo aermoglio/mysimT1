@@ -45,6 +45,10 @@ EventAction::EventAction(RunAction* runAction) : fRunAction(runAction) {}
 void EventAction::BeginOfEventAction(const G4Event*)
 {
   fEdep = 0.;
+
+  fEdepComp=0.;
+  fEdepPhotElec=0;
+
   fSiPhotonEdep = 0.;
 
   fEdepSiTot =0.;
@@ -62,6 +66,9 @@ void EventAction::EndOfEventAction(const G4Event* event)
   // accumulate statistics in run action
   fRunAction->AddEdep(fEdep);
   fRunAction->AddSiPhotonEdep(fSiPhotonEdep);
+
+  fRunAction->AddEdepComp(fEdepComp);
+  fRunAction->AddEdepPhotElec(fEdepPhotElec);
 
   fRunAction->AddEdepSiliconTotal(fEdepSiTot);
   fRunAction->AddEdepGlassTotal(fEdepGlassTot);
@@ -89,6 +96,15 @@ void EventAction::EndOfEventAction(const G4Event* event)
   analysisManager->FillNtupleIColumn(0,6, fScintillationPhotons);
   analysisManager->FillNtupleIColumn(0,7, fAbsorbedPhotons);
   analysisManager->AddNtupleRow(0);
+
+  //energy deposition breakdown in scintillator (compton vs photoelectric)
+
+  analysisManager->FillNtupleIColumn(2,0, eventID);
+  analysisManager->FillNtupleDColumn(2,1, fEdep);
+  analysisManager->FillNtupleDColumn(2,2, fEdepComp);
+  analysisManager->FillNtupleDColumn(2,3, fEdepPhotElec);
+
+  analysisManager->AddNtupleRow(2);
 
   //What this does: Each event ends with one new row in the CSV containing the total energy deposited in the scoring volume during that event.
 }

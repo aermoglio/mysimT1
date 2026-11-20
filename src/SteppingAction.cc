@@ -60,7 +60,23 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
         fEventAction->AddScintillationPhoton();
     }
   }
+      //tracking compton and tracking photoelec
+
+    if (sec->GetDefinition() ->GetParticleName() == "e-"){
+      G4double electronKE = sec->GetKineticEnergy();
+
+      auto creatorProcess=sec->GetCreatorProcess() ->GetProcessName();
+
+      if (creatorProcess == "compt"){
+        fEventAction->AddEdepComp(electronKE);
+    }
+      if (creatorProcess == "phot"){
+        fEventAction->AddEdepPhotElec(electronKE);
+    }
+      
 }
+}
+  
 
   if (!scintScoringVolume) {
     const auto detConstruction = static_cast<const DetectorConstruction*>(
@@ -81,6 +97,7 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
   if (volume == scintScoringVolume){
   G4double edepStep = step->GetTotalEnergyDeposit();
   fEventAction->AddEdep(edepStep);
+    
 }
 
 if (volume==GlassScoringVolume){
